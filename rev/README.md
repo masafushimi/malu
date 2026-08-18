@@ -5,6 +5,24 @@ SEOカルテ（診断レポート）で指摘した項目のうち、静的HTML�
 
 ## 対応済み
 
+### /menu/配下のURLを英語スラッグにrename
+日本語スラッグ（パーセントエンコードされた長いURL）を、下記の対応表で半角英数のスラッグに変更しました。全ページのリンク・canonical・パンくずも新スラッグに更新済みです。
+
+| 旧（日本語） | 新スラッグ |
+| --- | --- |
+| 脳神経外科・内科 | `menu/neurology/` |
+| 消化器内科 | `menu/gastroenterology/` |
+| 一般内科 | `menu/general-medicine/` |
+| 乳児のあたまの形外来 | `menu/infant-head-shape/` |
+| 各種健康診断 | `menu/health-checkup/` |
+| ドック | `menu/screening/` |
+| 自費診療 | `menu/self-pay/` |
+| 予防接種 | `menu/vaccination/` |
+| 会員制メンバーシップ | `menu/membership/` |
+| セカンドオピニオン | `menu/second-opinion/` |
+
+**重要**：これは`rev/`（GitHub Pagesプレビュー）内だけの変更です。本番のWordPress側でも同じリネームを行う場合は、WordPressの固定ページのスラッグを変更したうえで、**旧URL（日本語スラッグ）から新URLへ301リダイレクトを必ず設定してください**。相互リンクしている外部サイト（病院なび、EPARK等）や、Googleにインデックスされた旧URLが404にならないようにするためです。
+
 ### 全ページ共通（19ページすべて）
 - `viewport` タグに `initial-scale=1` を追加
 - `<meta name="generator" content="WordPress ...">` を削除（CMSバージョンの露出防止）
