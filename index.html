@@ -1,0 +1,1358 @@
+<!--- front-page.php -->
+<!doctype html>
+<html lang="ja"><head>
+<!-- header.php -->
+<meta charset="utf-8">
+	<title>MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸï½œæ›³èˆŸã�®å†…ç§‘ è„³ç¥�çµŒ æ¶ˆåŒ–å™¨ å†…è¦–é�¡ã‚¯ãƒªãƒ‹ãƒƒã‚¯</title>
+<meta name="description" content="ã€Œäº¬æˆ�æ›³èˆŸé§…ã€�å¾’æ­©ï¼‘åˆ†ã�®ã€�MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸã€‘ã�¯é ­ç—›å¤–æ�¥ãƒ»ç‰©å¿˜ã‚Œãƒ»é ­éƒ¨å¤–å‚·ã€�å¥³åŒ»ã�«ã‚ˆã‚‹èƒƒã‚«ãƒ¡ãƒ©ãƒ»å¤§è…¸å†…è¦–é�¡ã‚’ä¸­å¿ƒã�«ç”Ÿæ´»ç¿’æ…£ç—…ã‚„ã�Šé¢¨é‚ªã�ªã�©å†…ç§‘å…¨èˆ¬ã�‹ã‚‰ä¹³å…�ã�®é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥ã�¾ã�§åºƒã��è¨ºç™‚ã�—ã�¾ã�™ã€‚">
+<meta name="viewport" content="width=device-width,viewport-fit=cover">
+
+<!-- ogp -->
+<meta property="og:url" content="https://maluclinic.com" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ" />
+<meta property="og:description" content="ã€Œäº¬æˆ�æ›³èˆŸé§…ã€�å¾’æ­©ï¼‘åˆ†ã�®ã€�MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸã€‘ã�¯é ­ç—›å¤–æ�¥ãƒ»ç‰©å¿˜ã‚Œãƒ»é ­éƒ¨å¤–å‚·ã€�å¥³åŒ»ã�«ã‚ˆã‚‹èƒƒã‚«ãƒ¡ãƒ©ãƒ»å¤§è…¸å†…è¦–é�¡ã‚’ä¸­å¿ƒã�«ç”Ÿæ´»ç¿’æ…£ç—…ã‚„ã�Šé¢¨é‚ªã�ªã�©å†…ç§‘å…¨èˆ¬ã�‹ã‚‰ä¹³å…�ã�®é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥ã�¾ã�§åºƒã��è¨ºç™‚ã�—ã�¾ã�™ã€‚" />
+<meta property="og:site_name" content="MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ" />
+<meta property="og:image" content="https://maluclinic.com/wp/wp-content/uploads/2024/09/ogp.png" />
+
+<!-- css -->
+<link rel="preload" href="https://maluclinic.com/wp/wp-content/themes/t-palette/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://maluclinic.com/wp/wp-content/themes/t-palette/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="https://maluclinic.com/wp/wp-content/themes/t-palette/css/reset.css" media="all" />
+<link rel="stylesheet" href="https://maluclinic.com/wp/wp-content/themes/t-palette/css/drawer.min.css">
+<link rel="stylesheet" href="https://maluclinic.com/wp/wp-content/themes/t-palette/js/slick/slick.css">
+<link rel="stylesheet" href="https://maluclinic.com/wp/wp-content/themes/t-palette/js/slick/slick-theme.css">
+<link rel="stylesheet" href="https://maluclinic.com/wp/wp-content/themes/t-palette/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://maluclinic.com/wp/wp-content/themes/t-palette/style.css?v=7" media="all">
+<!-- MPã‚¯ãƒ©ã‚¦ãƒ‰ã�ŠçŸ¥ã‚‰ã�›CSS -->
+<style type="text/css">
+.news_list li{
+    margin-bottom: 10px;
+}
+.news_list em , .news_text_list em{
+    display:inline-block;
+    min-width:75px;
+    padding:0 5px;
+    background-color: #efefef;
+    font-style: normal;
+    color: #333;
+    text-align:center;
+}
+.news_text_list dt{
+    margin-bottom:10px;
+    font-weight:bold;
+    font-size: 17px;
+}
+.news_text_list dt em,.news_text_list dt span{ 
+    font-weight:normal;
+    font-size: 13px;
+}
+.news_text_list dd{
+    margin-bottom:30px;
+    padding-bottom:10px;
+    border-bottom:1px solid #ccc;
+}
+em.category_class3183 {
+    background-color: #EE5353FF;
+    color: #fff;
+}
+em.category_class3173 {
+    background-color: #97C27BFF;
+    color: #fff;
+}
+</style>
+
+<!-- favicon -->
+<link rel="icon" type="image/png" href="https://maluclinic.com/wp/wp-content/themes/t-palette/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="https://maluclinic.com/wp/wp-content/themes/t-palette/favicon/favicon.svg" />
+<link rel="shortcut icon" href="https://maluclinic.com/wp/wp-content/themes/t-palette/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://maluclinic.com/wp/wp-content/themes/t-palette/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ" />
+<link rel="manifest" href="https://maluclinic.com/wp/wp-content/themes/t-palette/favicon/site.webmanifest" />
+	
+<!-- â–¼Googleã‚¢ãƒŠãƒªãƒ†ã‚£ã‚¯ã‚¹ -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R12429ZTWY">
+</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-R12429ZTWY');
+gtag('config', 'G-3LT44CKRM1');
+</script><!-- â–²Googleã‚¢ãƒŠãƒªãƒ†ã‚£ã‚¯ã‚¹ -->
+
+<meta name='robots' content='max-image-preview:large' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/maluclinic.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.10"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="https://api.w.org/" href="https://maluclinic.com/wp-json/" /><link rel="alternate" type="application/json" href="https://maluclinic.com/wp-json/wp/v2/pages/304" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://maluclinic.com/wp/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.10" />
+<link rel="canonical" href="https://maluclinic.com/" />
+<link rel='shortlink' href='https://maluclinic.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://maluclinic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaluclinic.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://maluclinic.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmaluclinic.com%2F&#038;format=xml" />
+
+<!-- â–¼Google Font -->
+<!--<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500;600&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="preload" as="style">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@400;500;600&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">-->
+<!-- â–²Google Font -->
+</head>
+
+<body data-rsssl=1 class="home page-template-default page page-id-304 drawer drawer--right">
+
+<!-- â–¼PC header -->
+<header>
+	<div class="inner">
+	<div class="head_logo">
+	<a href="https://maluclinic.com">
+		<img src="https://maluclinic.com/wp/wp-content/uploads/2024/09/a589749eb3ca2466a4dedb2e5bf5e1a8.png" alt="MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ">
+	</a>
+	</div>
+
+<h1 class="pc">MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸï½œ<br class="sp_inline">å¢¨ç”°åŒºã�®å†…ç§‘ãƒ»è„³ç¥�çµŒå¤–ç§‘ãƒ»æ¶ˆåŒ–å™¨å†…ç§‘ãƒ»å†…è¦–é�¡ã‚¯ãƒªãƒ‹ãƒƒã‚¯</h1>
+
+<div class="head_info_wrap">
+<dl class="head_info">
+	<dt class="head_info_add">ã€’131-0046<br>æ�±äº¬éƒ½å¢¨ç”°åŒºäº¬å³¶1-44-1  BLESSæ›³èˆŸ1F</dt>
+	<dd class="head_info_tel"><span><i class="fas fa-phone-alt"></i></span>03-6657-0986</dd>
+</dl>
+
+<ul class="head_btn_area">
+<li><a href="https://qr.digikar-smart.jp/5ae6eb40-818e-4c20-9bc5-e2512e160413/reserve" class="sp_navi_btn" target="_blank" rel="noopener" onClick="gtag('event','click-web_yoyaku_pc', {'event_category':'web_yoyaku','event_label':'WEBäºˆç´„'})"><i class="far fa-calendar-check"></i>WEBäºˆç´„</a></li></ul>
+</div>
+
+	<!-- â–¼PCã�®ãƒŠãƒ“ -->
+	<nav>
+		<ul class="nav_menu_list">
+		<!-- â–¼ãƒ›ãƒ¼ãƒ  -->
+<li><a href="https://maluclinic.com/">ãƒ›ãƒ¼ãƒ <p>Home</p></a></li>
+<!-- â–²ãƒ›ãƒ¼ãƒ  -->
+<!-- â–¼åŒ»å¸«ç´¹ä»‹ -->
+<li><a href="https://maluclinic.com/doctor/">åŒ»å¸«ç´¹ä»‹<p>Doctor</p></a></li>
+<!-- â–²åŒ»å¸«ç´¹ä»‹ -->
+<!-- â–¼åŒ»é™¢æ¡ˆå†… -->
+<li><a href="https://maluclinic.com/clinic/">åŒ»é™¢æ¡ˆå†…<p>Clinic</p></a></li>
+<!-- â–²åŒ»é™¢æ¡ˆå†… -->
+<!-- â–¼è¨ºç™‚å†…å®¹ -->
+<li class="nav_slidebtm"><a href="https://maluclinic.com/medical/">è¨ºç™‚å†…å®¹<p>Medical</p></a>
+	<div>
+	
+		<a href="https://maluclinic.com/menu/%e8%84%b3%e7%a5%9e%e7%b5%8c%e5%a4%96%e7%a7%91%e5%86%85%e7%a7%91/">è„³ç¥�çµŒå¤–ç§‘ãƒ»å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e6%b6%88%e5%8c%96%e5%99%a8%e5%86%85%e7%a7%91/">æ¶ˆåŒ–å™¨å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%b8%80%e8%88%ac%e5%86%85%e7%a7%91/">ä¸€èˆ¬å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%b9%b3%e5%85%90%e3%81%ae%e3%81%82%e3%81%9f%e3%81%be%e3%81%ae%e5%bd%a2%e5%a4%96%e6%9d%a5/">ä¹³å…�ã�®é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e5%90%84%e7%a8%ae%e5%81%a5%e5%ba%b7%e8%a8%ba%e6%96%ad/">å�„ç¨®å�¥åº·è¨ºæ–­</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e3%83%89%e3%83%83%e3%82%af/">å�„ç¨®ãƒ‰ãƒƒã‚¯ï¼ˆäºˆé˜²åŒ»ç™‚ï¼‰</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e8%87%aa%e8%b2%bb%e8%a8%ba%e7%99%82/">ä¿�é™ºå¤–è¨ºç™‚</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%ba%88%e9%98%b2%e6%8e%a5%e7%a8%ae/">äºˆé˜²æ�¥ç¨®</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%bc%9a%e5%93%a1%e5%88%b6%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%82%b7%e3%83%83%e3%83%97/">ä¼šå“¡åˆ¶ãƒ¡ãƒ³ãƒ�ãƒ¼ã‚·ãƒƒãƒ—</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e3%82%bb%e3%82%ab%e3%83%b3%e3%83%89%e3%82%aa%e3%83%94%e3%83%8b%e3%82%aa%e3%83%b3/">ã‚»ã‚«ãƒ³ãƒ‰ã‚ªãƒ”ãƒ‹ã‚ªãƒ³</a>
+
+		</div>	
+</li>
+<!-- â–²è¨ºç™‚å†…å®¹ -->
+<!-- â–¼æ–™é‡‘è¡¨ -->
+<li><a href="https://maluclinic.com/price/">å†…è¦–é�¡æ¤œæŸ»<p>endoscope inspection</p></a></li>
+<!-- â–²æ–™é‡‘è¡¨ -->
+<!-- â–¼åˆ�è¨ºã�®æ–¹ã�¸ -->
+<li><a href="https://maluclinic.com/fast/">é ­ç—›å¤–æ�¥<p>headache outpatient</p></a></li>
+<!-- â–²åˆ�è¨ºã�®æ–¹ã�¸ -->
+<!-- â–¼Q&A -->
+<!-- â–²Q&A -->
+<!-- â–¼ã‚¢ã‚¯ã‚»ã‚¹ -->
+<li><a href="https://maluclinic.com/access/">ã‚¢ã‚¯ã‚»ã‚¹<p>Access</p></a></li>
+<!-- â–²ã‚¢ã‚¯ã‚»ã‚¹ -->
+<!-- â–¼æ±‚äººæƒ…å ± -->
+<!-- â–²æ±‚äººæƒ…å ± -->
+<!-- â–¼ã�Šå•�ã�„å�ˆã‚�ã�› -->
+<!-- â–²ã�Šå•�ã�„å�ˆã‚�ã�› -->
+<!-- â–¼ã�ŠçŸ¥ã‚‰ã�› -->
+<li><a href="https://maluclinic.com/news/">ã�ŠçŸ¥ã‚‰ã�›<p>News</p></a></li>
+<!-- â–²ã�ŠçŸ¥ã‚‰ã�› -->
+<!-- â–¼ãƒ–ãƒ­ã‚° -->
+<!-- â–²ãƒ–ãƒ­ã‚° -->
+<!-- â–¼ RIBON æ�¡ç”¨ãƒšãƒ¼ã‚¸ãƒªãƒ³ã‚¯ -->
+<!-- â–² RIBON æ�¡ç”¨ãƒšãƒ¼ã‚¸ãƒªãƒ³ã‚¯ -->
+<!-- â–¼æ–°è¦�å›ºå®šãƒšãƒ¼ã‚¸ -->
+<!-- â–²æ–°è¦�å›ºå®šãƒšãƒ¼ã‚¸ -->
+
+		</ul>
+	</nav>
+	<!-- â–²PCã�®ãƒŠãƒ“ -->
+	</div><!-- .inner -->
+
+<div class="fixed_web_yoyaku_btn">
+	<a href="https://qr.digikar-smart.jp/5ae6eb40-818e-4c20-9bc5-e2512e160413/reserve" target="_blank" rel="noopener noreferrer" onClick="gtag('event','click-web_yoyaku_pc_side', {'event_category':'web_yoyaku','event_label':'WEBäºˆç´„'})"><i class="far fa-calendar-check"></i> ï¼·ï¼¥ï¼¢äºˆç´„</a>		</div>
+</header>
+<!-- â–²PC header -->
+
+
+<!-- â–¼ã‚¹ãƒ�ãƒ›ã�®ãƒŠãƒ“ -->
+<div class="sp_header" role="banner">
+	<div class="inner">
+	<div class="sp_logo">
+			<a href="https://maluclinic.com"><img src="https://maluclinic.com/wp/wp-content/uploads/2024/09/a589749eb3ca2466a4dedb2e5bf5e1a8.png" alt="MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ"></a>
+	</div>
+
+	<button type="button" class="drawer-toggle drawer-hamburger">
+		<span class="sr-only">toggle navigation</span>
+		<span class="drawer-hamburger-icon"></span>
+	</button>
+
+	<div class="drawer-nav" role="navigation">
+	<div class="drawer-menu">
+	<ul class="sp_navi">
+	<!-- â–¼ãƒ›ãƒ¼ãƒ  -->
+<li><a href="https://maluclinic.com/">ãƒ›ãƒ¼ãƒ <p>Home</p></a></li>
+<!-- â–²ãƒ›ãƒ¼ãƒ  -->
+<!-- â–¼åŒ»å¸«ç´¹ä»‹ -->
+<li><a href="https://maluclinic.com/doctor/">åŒ»å¸«ç´¹ä»‹<p>Doctor</p></a></li>
+<!-- â–²åŒ»å¸«ç´¹ä»‹ -->
+<!-- â–¼åŒ»é™¢æ¡ˆå†… -->
+<li><a href="https://maluclinic.com/clinic/">åŒ»é™¢æ¡ˆå†…<p>Clinic</p></a></li>
+<!-- â–²åŒ»é™¢æ¡ˆå†… -->
+<!-- â–¼è¨ºç™‚å†…å®¹ -->
+<li class="nav_slidebtm"><a href="https://maluclinic.com/medical/">è¨ºç™‚å†…å®¹<p>Medical</p></a>
+	<div>
+	
+		<a href="https://maluclinic.com/menu/%e8%84%b3%e7%a5%9e%e7%b5%8c%e5%a4%96%e7%a7%91%e5%86%85%e7%a7%91/">è„³ç¥�çµŒå¤–ç§‘ãƒ»å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e6%b6%88%e5%8c%96%e5%99%a8%e5%86%85%e7%a7%91/">æ¶ˆåŒ–å™¨å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%b8%80%e8%88%ac%e5%86%85%e7%a7%91/">ä¸€èˆ¬å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%b9%b3%e5%85%90%e3%81%ae%e3%81%82%e3%81%9f%e3%81%be%e3%81%ae%e5%bd%a2%e5%a4%96%e6%9d%a5/">ä¹³å…�ã�®é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e5%90%84%e7%a8%ae%e5%81%a5%e5%ba%b7%e8%a8%ba%e6%96%ad/">å�„ç¨®å�¥åº·è¨ºæ–­</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e3%83%89%e3%83%83%e3%82%af/">å�„ç¨®ãƒ‰ãƒƒã‚¯ï¼ˆäºˆé˜²åŒ»ç™‚ï¼‰</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e8%87%aa%e8%b2%bb%e8%a8%ba%e7%99%82/">ä¿�é™ºå¤–è¨ºç™‚</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%ba%88%e9%98%b2%e6%8e%a5%e7%a8%ae/">äºˆé˜²æ�¥ç¨®</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%bc%9a%e5%93%a1%e5%88%b6%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%82%b7%e3%83%83%e3%83%97/">ä¼šå“¡åˆ¶ãƒ¡ãƒ³ãƒ�ãƒ¼ã‚·ãƒƒãƒ—</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e3%82%bb%e3%82%ab%e3%83%b3%e3%83%89%e3%82%aa%e3%83%94%e3%83%8b%e3%82%aa%e3%83%b3/">ã‚»ã‚«ãƒ³ãƒ‰ã‚ªãƒ”ãƒ‹ã‚ªãƒ³</a>
+
+		</div>	
+</li>
+<!-- â–²è¨ºç™‚å†…å®¹ -->
+<!-- â–¼æ–™é‡‘è¡¨ -->
+<li><a href="https://maluclinic.com/price/">å†…è¦–é�¡æ¤œæŸ»<p>endoscope inspection</p></a></li>
+<!-- â–²æ–™é‡‘è¡¨ -->
+<!-- â–¼åˆ�è¨ºã�®æ–¹ã�¸ -->
+<li><a href="https://maluclinic.com/fast/">é ­ç—›å¤–æ�¥<p>headache outpatient</p></a></li>
+<!-- â–²åˆ�è¨ºã�®æ–¹ã�¸ -->
+<!-- â–¼Q&A -->
+<!-- â–²Q&A -->
+<!-- â–¼ã‚¢ã‚¯ã‚»ã‚¹ -->
+<li><a href="https://maluclinic.com/access/">ã‚¢ã‚¯ã‚»ã‚¹<p>Access</p></a></li>
+<!-- â–²ã‚¢ã‚¯ã‚»ã‚¹ -->
+<!-- â–¼æ±‚äººæƒ…å ± -->
+<!-- â–²æ±‚äººæƒ…å ± -->
+<!-- â–¼ã�Šå•�ã�„å�ˆã‚�ã�› -->
+<!-- â–²ã�Šå•�ã�„å�ˆã‚�ã�› -->
+<!-- â–¼ã�ŠçŸ¥ã‚‰ã�› -->
+<li><a href="https://maluclinic.com/news/">ã�ŠçŸ¥ã‚‰ã�›<p>News</p></a></li>
+<!-- â–²ã�ŠçŸ¥ã‚‰ã�› -->
+<!-- â–¼ãƒ–ãƒ­ã‚° -->
+<!-- â–²ãƒ–ãƒ­ã‚° -->
+<!-- â–¼ RIBON æ�¡ç”¨ãƒšãƒ¼ã‚¸ãƒªãƒ³ã‚¯ -->
+<!-- â–² RIBON æ�¡ç”¨ãƒšãƒ¼ã‚¸ãƒªãƒ³ã‚¯ -->
+<!-- â–¼æ–°è¦�å›ºå®šãƒšãƒ¼ã‚¸ -->
+<!-- â–²æ–°è¦�å›ºå®šãƒšãƒ¼ã‚¸ -->
+
+	<li><a href="https://qr.digikar-smart.jp/5ae6eb40-818e-4c20-9bc5-e2512e160413/reserve" class="sp_navi_btn" target="_blank" rel="noopener" onClick="gtag('event','tap-web_yoyaku_sp_hamb', {'event_category':'web_yoyaku','event_label':'WEBäºˆç´„'})"><i class="far fa-calendar-check"></i> WEBäºˆç´„</a></li>			</ul>
+
+		<ul class="sp_btn_area">
+			<li><a href="https://lin.ee/cG0sMJM" target="_blank" rel="noopener"><i class="fab fa-line"></i>LINE</a></li>		</ul>
+	
+	</div>
+	</div><!-- .drawer-nav -->
+
+	</div><!-- .inner -->
+</div><!-- .sp_header -->
+
+
+<div class="sp_under_nav">
+	<ul>
+	<li><a href="tel:03-6657-0986" onClick="gtag('event','tap-tel_sp_ft', {'event_category':'tel','event_label':'TEL'})"><i class="fas fa-mobile"></i>é›»è©±</a></li>	<li><a href="https://qr.digikar-smart.jp/5ae6eb40-818e-4c20-9bc5-e2512e160413/reserve" target="_blank" rel="noopener" onClick="gtag('event','tap-web_yoyaku_sp_ft', {'event_category':'web_yoyaku','event_label':'WEBäºˆç´„'})"><i class="far fa-calendar-check"></i>WEBäºˆç´„</a></li>		<li><a href="https://maluclinic.com/access"><i class="fas fa-map-marker-alt"></i>ã‚¢ã‚¯ã‚»ã‚¹</a></li>
+	</ul>
+</div>
+<!-- â–²ã‚¹ãƒ�ãƒ›ã�®ãƒŠãƒ“ -->
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"MedicalClinic",
+"name":"MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ",
+"address":{
+"@type":"PostalAddress",
+"streetAddress":"1-44-1 BLESSæ›³èˆŸ1F",
+"addressLocality":"å¢¨ç”°åŒºäº¬å³¶",
+"addressRegion":"æ�±äº¬éƒ½",
+"postalCode":"131-0046",
+"addressCountry":"JP"
+},
+"geo":{
+"@type":"GeoCoordinates",
+"latitude":"35.71883146245102",
+"longitude":"139.82087225029937"
+},
+"telephone":"+81-3-6657-0986",
+"image":"https://maluclinic.com/wp/wp-content/uploads/2024/08/IMG_6050.jpeg",
+"url":"https://maluclinic.com/"
+}
+</script><!--============================== â–¼mainvisual ==============================-->
+<div class="mainvisual_wrapper">
+	<div id="mainvisual">
+				<ul class="slider-slide pattern">
+		<li>
+										<img src="https://maluclinic.com/wp/wp-content/uploads/2024/09/1bbf009b41ee3d7e0ef21c980758b16b-scaled-e1732584922988.jpg" alt="ã‚¹ãƒ©ã‚¤ãƒ‰">
+					</li>	
+							<li>
+				<img src="https://maluclinic.com/wp/wp-content/uploads/2024/10/HP2.jpg" alt="ã‚¹ãƒ©ã‚¤ãƒ‰">
+			</li>
+					
+							<li>
+				<img src="https://maluclinic.com/wp/wp-content/uploads/2024/10/HP3.jpg" alt="ã‚¹ãƒ©ã‚¤ãƒ‰">
+			</li>
+				</ul>	
+
+	<div class="inner">
+
+		<!-- â–¼ãƒ�ãƒŠãƒ¼ï¼ˆç”»åƒ�ã�ªã�—ï¼‰ -->
+		<div class="mv_bannar pc">
+						<div class="btn01"><a href="https://qr.digikar-smart.jp/5ae6eb40-818e-4c20-9bc5-e2512e160413/reserve" target="_blank" rel="noopener"><font size="5"face="MS Pã‚´ã‚·ãƒƒã‚¯" >è¨ºç™‚äºˆç´„ã�¯<br>ã�“ã�¡ã‚‰ã�‹ã‚‰</font></a></div>
+					</div>
+		<!-- â–²ãƒ�ãƒŠãƒ¼ï¼ˆç”»åƒ�ã�ªã�—ï¼‰ -->
+
+		<!-- â–¼ã‚­ãƒ£ãƒƒãƒ�ã‚³ãƒ”ãƒ¼ -->
+						<div class="main_catch">
+			<p class="catchcopy_tit"><span>ã�‚ã�Ÿã�¾ã�¨ã�Šã�ªã�‹ã�®å°‚é–€åŒ»<br>æœ€æ–°CTãƒ»å†…è¦–é�¡ã‚’å‚™ã�ˆã�Ÿ<br>åœ°åŸŸã�®ç·�å�ˆã‚¯ãƒªãƒ‹ãƒƒã‚¯</span></p>			<p class="catchcopy_text catchcopy_text01"><span>äº¬æˆ�æ›³èˆŸé§…å¾’æ­©1åˆ† æ˜�æ²»é€šã‚Šæ²¿ã�„</span></p>			<p class="catchcopy_text catchcopy_text02"><span>å†…è¦–é�¡AIã‚’ã‚¨ãƒªã‚¢åˆ�å°�å…¥ </span></p>			<p class="catchcopy_text catchcopy_text03"><span>é ­ç—›å¤–æ�¥ / å¹…åºƒã�„å†…ç§‘ç–¾æ‚£ã�«å¯¾å¿œ</span></p>		</div><!-- .main_catch -->
+				<!-- â–²ã‚­ãƒ£ãƒƒãƒ�ã‚³ãƒ”ãƒ¼ -->
+
+		<!-- â–¼ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ± PCã‚¨ãƒªã‚¢ -->
+						<div class="main_open pc">
+		<p class="main_opentext">æœˆæ›œã�¯20æ™‚ã�¾ã�§<span>7/1ã€œã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚é–‹å§‹</span></p>
+			<p class="nairankai_title">èƒƒå¤§è…¸ã‚«ãƒ¡ãƒ©ã�ªã‚‰ã€�ã�¾ã‚‹ã‚¯ãƒª</p>	
+			<p class="nairankai_date">å�„ç¨®å�¥è¨ºã€�ãƒ‰ãƒƒã‚¯å�—ä»˜ä¸­</p>	
+			<p class="nairankai_time">é ­ç—›å¤–æ�¥ã‚‚å†…è¦–é�¡ã‚‚ç›´æ�¥WEBäºˆç´„OK</p>		</div>
+				<!-- â–²ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ± PCã‚¨ãƒªã‚¢ -->
+
+		<!-- â–¼è¨ºç™‚æ™‚é–“ PCã‚¨ãƒªã‚¢ -->
+									<div class="main_time" id="main_time01">
+			<!-- â–¼è¨ºç™‚æ™‚é–“ãƒ«ãƒ¼ãƒ—é–‹å§‹ -->
+<div class="sche_wrap" id="sche_wrap1">
+	<!-- â–¼tableãƒ«ãƒ¼ãƒ—é–‹å§‹ -->
+		<table class="tb02">
+	<tr>
+		<th class="center">è¨ºç™‚æ™‚é–“</th>
+		<td>æœˆ</td>
+		<td>ç�«</td>
+		<td>æ°´</td>
+		<td>æœ¨</td>
+		<td>é‡‘</td>
+		<td>åœŸ</td>
+		<td>æ—¥</td>
+	</tr>
+		<tr>
+		<th class="center">9:00-12:30</th>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â–²</td>
+		<td>ï¼�</td>
+	</tr>
+		<tr>
+		<th class="center">14:30-18:00</th>
+		<td>â€»</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>ï¼�</td>
+		<td>ï¼�</td>
+	</tr>
+		</table>
+		<!-- â–²tableãƒ«ãƒ¼ãƒ—é–‰ã�˜ -->			
+	<!-- â–¼ä¼‘è¨ºæ—¥ãƒ»è£œè¶³ -->
+		<div class="schedule_note">
+		<p class="kyushinbi">ä¼‘è¨ºæ—¥ï¼šæ—¥æ›œãƒ»ç¥�æ—¥</p>		<p><p>â˜†è©³ç´°ã�¯ä¸‹ã�®æ‹…å½“åŒ»è¡¨ã‚’ã�”å�‚ç…§ã��ã� ã�•ã�„<br />
+â–²â€¦åœŸæ›œã�¯ç¬¬1,3,5é€± 9:00-13:00ã�®ã�¿ã€€<br />
+â€»â€¦æœˆæ›œã�¯20:00ã�¾ã�§ï¼ˆã‚¢ãƒ•ã‚¿ãƒ¼6å¤–æ�¥ï¼‰<br />
+å¹³æ—¥æœ€çµ‚å�—ä»˜30åˆ†å‰� åœŸæ›œæœ€çµ‚å�—ä»˜15åˆ†å‰�<br />
+æ¶ˆåŒ–å™¨å†…ç§‘ã�¯9:30-12:30, 14:30-16:00<br />
+â€»ç�«æ›œå�ˆå¾Œãƒ»æ°´æ›œçµ‚æ—¥ã�¯å‰¯é™¢é•·ï¼ˆæ¶ˆåŒ–å™¨å°‚é–€åŒ»ï¼‰ä¸�åœ¨ã�®ã�Ÿã‚�æ¶ˆåŒ–å™¨ç—‡çŠ¶ã�®è¨ºå¯Ÿã�¯é™¢é•·ã�Œæ‹…å½“ã�„ã�Ÿã�—ã�¾ã�™ã€‚<br />
+â€»16:30ä»¥é™�ã�«æ¶ˆåŒ–å™¨ç—‡çŠ¶ã�§å�—è¨ºã‚’ã�”å¸Œæœ›ã�®æ–¹ã�¯ã€�ã€Œå†…ç§‘ä¸€èˆ¬ã€�ã�‹ã‚‰ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚</p>
+</p>	</div>
+		<!-- â–²ä¼‘è¨ºæ—¥ãƒ»è£œè¶³ -->
+</div><!-- .sche_wrap -->
+<!-- â–²è¨ºç™‚æ™‚é–“ãƒ«ãƒ¼ãƒ—é–‰ã�˜ -->			</div>
+										<!-- â–²è¨ºç™‚æ™‚é–“ PCã‚¨ãƒªã‚¢ -->
+	</div><!-- .inner -->
+</div><!-- #mainvisual -->
+</div><!-- .mainvisual_wrapper -->
+<!--============================== â–²mainvisual ==============================-->
+<h1 class="sp">MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸï½œ<br class="sp_inline">å¢¨ç”°åŒºã�®å†…ç§‘ãƒ»è„³ç¥�çµŒå¤–ç§‘ãƒ»æ¶ˆåŒ–å™¨å†…ç§‘ãƒ»å†…è¦–é�¡ã‚¯ãƒªãƒ‹ãƒƒã‚¯</h1> 
+<!--============================== â–¼ä¸‹éƒ¨ãƒ¡ãƒ‹ãƒ¥ãƒ¼ ==============================-->
+<div class="nav_bottom_wrap">
+	<div class="nav_bottom_inner">
+		<!-- headerã�«ã�‚ã‚‹PCã�®navã‚’ã�“ã�“ã�«ç§»å‹•ã�™ã‚‹ -->
+	</div>
+</div>
+<!--============================== â–²ä¸‹éƒ¨ãƒ¡ãƒ‹ãƒ¥ãƒ¼ ==============================-->
+
+<div class="contents_bg">
+<div class="wrapper">
+<main class="front">
+<!--============================== â–¼ã‚¹ãƒ�ãƒ¼ãƒˆãƒ•ã‚©ãƒ³ã�®ã�¿è¡¨ç¤º ==============================-->
+<section class="sp top_sp_only box1">
+	<!-- â–¼ãƒ�ãƒŠãƒ¼ -->
+
+		<!-- â–¼ãƒ�ãƒŠãƒ¼ï¼ˆç”»åƒ�ã�ªã�—ï¼‰ -->
+		<div class="mb10">
+						<div class="btn01"><a href="https://qr.digikar-smart.jp/5ae6eb40-818e-4c20-9bc5-e2512e160413/reserve" target="_blank" rel="noopener"><font size="5"face="MS Pã‚´ã‚·ãƒƒã‚¯" >è¨ºç™‚äºˆç´„ã�¯<br>ã�“ã�¡ã‚‰ã�‹ã‚‰</font></a></div>
+					</div>
+		<!-- â–²ãƒ�ãƒŠãƒ¼ï¼ˆç”»åƒ�ã�ªã�—ï¼‰ -->
+
+	<!-- â–¼ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ± -->
+			<div class="main_open">
+	<p class="main_opentext">æœˆæ›œã�¯20æ™‚ã�¾ã�§<span>7/1ã€œã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚é–‹å§‹</span></p>
+		<p class="nairankai_title">èƒƒå¤§è…¸ã‚«ãƒ¡ãƒ©ã�ªã‚‰ã€�ã�¾ã‚‹ã‚¯ãƒª</p>	
+		<p class="nairankai_date">å�„ç¨®å�¥è¨ºã€�ãƒ‰ãƒƒã‚¯å�—ä»˜ä¸­</p>	
+		<p class="nairankai_time">é ­ç—›å¤–æ�¥ã‚‚å†…è¦–é�¡ã‚‚ç›´æ�¥WEBäºˆç´„OK</p>	</div>
+		<!-- â–²ã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ± -->
+
+	<!-- â–¼è¨ºç™‚æ™‚é–“ -->
+									<!-- â–¼è¨ºç™‚æ™‚é–“ãƒ«ãƒ¼ãƒ—é–‹å§‹ -->
+<div class="sche_wrap" id="sche_wrap1">
+	<p class="tb02_tit">è¨ºç™‚æ™‚é–“</p>	<!-- â–¼tableãƒ«ãƒ¼ãƒ—é–‹å§‹ -->
+		<table class="tb02">
+	<tr>
+		<th>&nbsp;</th>
+		<td>æœˆ</td>
+		<td>ç�«</td>
+		<td>æ°´</td>
+		<td>æœ¨</td>
+		<td>é‡‘</td>
+		<td>åœŸ</td>
+		<td>æ—¥</td>
+	</tr>
+		<tr>
+		<th class="center">9:00-12:30</th>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â–²</td>
+		<td>ï¼�</td>
+	</tr>
+		<tr>
+		<th class="center">14:30-18:00</th>
+		<td>â€»</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>ï¼�</td>
+		<td>ï¼�</td>
+	</tr>
+		</table>
+		<!-- â–²tableãƒ«ãƒ¼ãƒ—é–‰ã�˜ -->			
+	<!-- â–¼ä¼‘è¨ºæ—¥ãƒ»è£œè¶³ -->
+		<div class="schedule_note">
+		<p class="kyushinbi">ä¼‘è¨ºæ—¥ï¼šæ—¥æ›œãƒ»ç¥�æ—¥</p>		<p><p>â˜†è©³ç´°ã�¯ä¸‹ã�®æ‹…å½“åŒ»è¡¨ã‚’ã�”å�‚ç…§ã��ã� ã�•ã�„<br />
+â–²â€¦åœŸæ›œã�¯ç¬¬1,3,5é€± 9:00-13:00ã�®ã�¿ã€€<br />
+â€»â€¦æœˆæ›œã�¯20:00ã�¾ã�§ï¼ˆã‚¢ãƒ•ã‚¿ãƒ¼6å¤–æ�¥ï¼‰<br />
+å¹³æ—¥æœ€çµ‚å�—ä»˜30åˆ†å‰� åœŸæ›œæœ€çµ‚å�—ä»˜15åˆ†å‰�<br />
+æ¶ˆåŒ–å™¨å†…ç§‘ã�¯9:30-12:30, 14:30-16:00<br />
+â€»ç�«æ›œå�ˆå¾Œãƒ»æ°´æ›œçµ‚æ—¥ã�¯å‰¯é™¢é•·ï¼ˆæ¶ˆåŒ–å™¨å°‚é–€åŒ»ï¼‰ä¸�åœ¨ã�®ã�Ÿã‚�æ¶ˆåŒ–å™¨ç—‡çŠ¶ã�®è¨ºå¯Ÿã�¯é™¢é•·ã�Œæ‹…å½“ã�„ã�Ÿã�—ã�¾ã�™ã€‚<br />
+â€»16:30ä»¥é™�ã�«æ¶ˆåŒ–å™¨ç—‡çŠ¶ã�§å�—è¨ºã‚’ã�”å¸Œæœ›ã�®æ–¹ã�¯ã€�ã€Œå†…ç§‘ä¸€èˆ¬ã€�ã�‹ã‚‰ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚</p>
+</p>	</div>
+		<!-- â–²ä¼‘è¨ºæ—¥ãƒ»è£œè¶³ -->
+</div><!-- .sche_wrap -->
+<!-- â–²è¨ºç™‚æ™‚é–“ãƒ«ãƒ¼ãƒ—é–‰ã�˜ -->									<!-- â–²è¨ºç™‚æ™‚é–“ -->
+</section>
+<!--============================== â–²ã‚¹ãƒ�ãƒ¼ãƒˆãƒ•ã‚©ãƒ³ã�®ã�¿è¡¨ç¤º ==============================-->
+
+
+
+<!--============================== â–¼å†…è¦§ä¼šæƒ…å ± ==============================-->
+		<section class="sec_top_nairankai">
+	<div class="box1">
+			<h2>èƒƒå¤§è…¸ã‚«ãƒ¡ãƒ©ã�ªã‚‰ã€�ã�¾ã‚‹ã‚¯ãƒª</h2>						<div class="text">
+				<p class="nairankai_date tbl_auto">å�„ç¨®å�¥è¨ºã€�ãƒ‰ãƒƒã‚¯å�—ä»˜ä¸­</p>	
+				<p class="nairankai_time tbl_auto">é ­ç—›å¤–æ�¥ã‚‚å†…è¦–é�¡ã‚‚ç›´æ�¥WEBäºˆç´„OK</p>							</div>
+	</div>
+</section>
+		<!--============================== â–²å†…è¦§ä¼šæƒ…å ± ==============================-->
+
+
+
+<!--============================== â–¼ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ä¸Š ==============================-->
+<section class="sec_freearea_up" id="sec_freearea_up_01">
+	<div class="freearea_up">
+		<h2>å…¬å¼�LINEã�¯ã�“ã�¡ã‚‰</h2>						<div class="text"><p><a href="https://lin.ee/cG0sMJM"><img decoding="async" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="å�‹ã� ã�¡è¿½åŠ " height="36" border="0" class="aligncenter" /></a></p>
+</div>
+			</div><!-- .freearea_up -->
+</section>
+	<!--============================== â–²ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ä¸Š ==============================-->
+
+
+
+<!--============================== â–¼ã�ŠçŸ¥ã‚‰ã�› ==============================-->
+<section class="sec_top_news">
+    <div class="box1">
+        <h2>ã�ŠçŸ¥ã‚‰ã�›</h2>
+		
+<ul class="sec_top_news_list">
+                    <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.07.21</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>å®…è–¬ä¾¿ã‚µãƒ¼ãƒ“ã‚¹ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p class="PDq2pG_selectionAnchorContainer" data-start="103" data-end="121"><strong data-start="103" data-end="121">å®…è–¬ä¾¿ã‚µãƒ¼ãƒ“ã‚¹å�œæ­¢ã�®ã�ŠçŸ¥ã‚‰ã�›</strong></p><p data-start="123" data-end="158">å½“é™¢ã�§ã�¯ã€�è‡ªå®…ã�¸å‡¦æ–¹è–¬ã‚’éƒµé€�ã�™ã‚‹ã€Œå®…è–¬ä¾¿ã€�ã‚µãƒ¼ãƒ“ã‚¹ã‚’å�œæ­¢ã�¨ã�„ã�Ÿã�—ã�¾ã�—ã�Ÿã€‚</p><p data-start="160" data-end="230">ã‚ˆã‚Šå®‰å…¨ã�§ç¢ºå®Ÿã�ªã‚µãƒ¼ãƒ“ã‚¹æ��ä¾›ä½“åˆ¶ã�«ã�¤ã�„ã�¦æ¤œè¨�ã‚’é‡�ã�­ã�Ÿçµ�æ�œã€�ç�¾æ™‚ç‚¹ã�§ã�¯å��åˆ†ã�ªå“�è³ªã‚’ç¶­æŒ�ã�™ã‚‹ã�“ã�¨ã�Œé›£ã�—ã��ã�‹ã�ˆã�£ã�¦æ··ä¹±ã‚’æ‹›ã��ã�¨åˆ¤æ–­ã�—ã€�æœ¬ã‚µãƒ¼ãƒ“ã‚¹ã‚’å�œæ­¢ã�—ã�¦ã�Šã‚Šã�¾ã�™ã€‚</p><p data-start="232" data-end="284">æ‚£è€…æ§˜ã�«ã�¯ã�”ä¸�ä¾¿ã‚’ã�Šã�‹ã�‘ã�„ã�Ÿã�—ã�¾ã�™ã�Œã€�å®‰å…¨ã�§é�©åˆ‡ã�ªåŒ»ç™‚æ��ä¾›ã�®ã�Ÿã‚�ã€�ã�”ç�†è§£ã�®ã�»ã�©ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.07.08</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>ğŸŒ» å¤�å­£ä¼‘è¨ºã�®ã�ŠçŸ¥ã‚‰ã�›</h3>
+            <div class="top_news_text"><p><p data-start="69" data-end="85">ğŸŒ» <strong data-start="72" data-end="85">å¤�å­£ä¼‘è¨ºã�®ã�ŠçŸ¥ã‚‰ã�›</strong></p><p data-start="87" data-end="116">èª ã�«å‹�æ‰‹ã�ªã�Œã‚‰ã€�ä¸‹è¨˜ã�®æœŸé–“ã‚’å¤�å­£ä¼‘è¨ºã�¨ã�•ã�›ã�¦ã�„ã�Ÿã� ã��ã�¾ã�™ã€‚</p><p data-start="118" data-end="147"><strong data-start="118" data-end="126">ä¼‘è¨ºæœŸé–“</strong><br><strong data-start="127" data-end="147">8æœˆ8æ—¥ï¼ˆåœŸï¼‰ï½�8æœˆ14æ—¥ï¼ˆé‡‘ï¼‰</strong></p><p data-start="149" data-end="171">8æœˆ15æ—¥ï¼ˆåœŸï¼‰ã‚ˆã‚Šé€šå¸¸é€šã‚Šè¨ºç™‚ã�„ã�Ÿã�—ã�¾ã�™ã€‚å†…è¦–é�¡æ¤œæŸ»ã‚‚å�¯èƒ½ã�§ã�™ã€‚</p><p data-start="149" data-end="171">ä½•å�’ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.06.11</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>7/1ã�‹ã‚‰ã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚é–‹å§‹ã�®ã�ŠçŸ¥ã‚‰ã�›</h3>
+            <div class="top_news_text"><p><div class="relative basis-auto flex-col -mb-(--composer-overlap-px) pb-(--composer-overlap-px) [--composer-overlap-px:28px] grow flex"><div class="flex flex-col text-sm"><div class="pointer-events-none translate-y-(--scroll-root-safe-area-inset-bottom) R6Vx5W_threadScrollVars min-h-(--gutter-remaining-height,0px) group-data-stream-active/scroll-root:h-[calc(var(--thread-response-height)-16*var(--spacing))]"><span style="font-size: 14pt;" data-mce-style="font-size: 14pt;"><strong>ã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚é–‹å§‹ã�®ã�ŠçŸ¥ã‚‰ã�›</strong></span></div><div class="pointer-events-none translate-y-(--scroll-root-safe-area-inset-bottom) R6Vx5W_threadScrollVars min-h-(--gutter-remaining-height,0px) group-data-stream-active/scroll-root:h-[calc(var(--thread-response-height)-16*var(--spacing))]"><br data-mce-bogus="1"></div></div></div><div id="thread-bottom-container" class="sticky bottom-0 z-10 group/thread-bottom-container relative isolate w-full basis-auto has-data-has-thread-error:pt-2 has-data-has-thread-error:[box-shadow:var(--sharp-edge-bottom-shadow)] md:border-transparent md:pt-0 dark:border-white/20 md:dark:border-transparent print:hidden content-fade single-line flex flex-col"><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">å¹³ç´ ã‚ˆã‚ŠMALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸã‚’ã�”æ„›é¡§ã�„ã�Ÿã� ã��ã�‚ã‚Šã�Œã�¨ã�†ã�”ã�–ã�„ã�¾ã�™ã€‚ã�“ã�®åº¦ã€�æ‚£è€…æ§˜ã�®ã�”è¦�æœ›ã�«ã�Šå¿œã�ˆã�—7/1ã‚ˆã‚Šã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚ã‚’é–‹å§‹ã�„ã�Ÿã�—ã�¾ã�™ã€‚</span></div><div class="relative mx-auto h-0"><br data-mce-bogus="1"></div><div class="relative mx-auto h-0"><strong><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">ã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚å®Ÿæ–½æ™‚é–“</span></strong></div><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">æœˆæ›œ:15:00ã€œ18:00ã€€ã€€</span></div><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">ç�«æ›œã�‹ã‚‰é‡‘æ›œ:15:00ã€œ17:00</span></div><div class="relative mx-auto h-0"><br data-mce-bogus="1"></div><div class="relative mx-auto h-0"><strong><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">å¯¾è±¡ã�¨ã�ªã‚‹è¨ºç™‚</span></strong></div><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">ãƒ»å†…ç§‘ä¸€èˆ¬å†�è¨º</span></div><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">ãƒ»é ­ç—›å¤–æ�¥å†�è¨º</span></div><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">ãƒ»å¤§è…¸ã‚«ãƒ¡ãƒ©äº‹å‰�è¨ºå¯Ÿ</span></div><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">ãƒ»ãƒ¡ãƒ‡ã‚£ã‚«ãƒ«ãƒ€ã‚¤ã‚¨ãƒƒãƒˆå†�è¨º</span></div><div class="relative mx-auto h-0"><br data-mce-bogus="1"></div><div class="relative mx-auto h-0"><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;"><strong>å�—è¨ºæ–¹æ³•</strong></span></div><div class="relative mx-auto h-0"><p data-start="280" data-end="323">ã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚ã�«ã�¯ã€�<strong data-start="290" data-end="303">ãƒ‡ã‚¸ã‚¹ãƒ�è¨ºç™‚ã‚¢ãƒ—ãƒª</strong>ã�®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã�Šã‚ˆã�³äº‹å‰�ç™»éŒ²ã�Œå¿…è¦�ã�§ã�™ã€‚</p><p data-start="325" data-end="345">ã�‚ã‚‰ã�‹ã�˜ã‚�ä»¥ä¸‹ã�®è¨­å®šã‚’ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p></div><div class="relative mx-auto h-0">ãƒ»ãƒ‡ã‚¸ã‚¹ãƒ�è¨ºç™‚ã‚¢ãƒ—ãƒªã�®ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰</div><div class="relative mx-auto h-0">ãƒ»ãƒ‡ã‚¸ã‚¹ãƒ�æ±ºæ¸ˆç”¨ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚«ãƒ¼ãƒ‰ç™»éŒ²</div><div class="relative mx-auto h-0">ãƒ»æœ¬äººç¢ºèª�ç™»éŒ²</div><div class="relative mx-auto h-0">ãƒ»å�—ã�‘å�–ã‚Šã�®è–¬å±€ç™»éŒ²ã€€ï¼ˆå®…è–¬ä¾¿å¸Œæœ›ã�®å ´å�ˆã�¯ä¸�è¦�ï¼‰</div><div class="relative mx-auto h-0"><p data-start="442" data-end="487">â€»ç—‡çŠ¶ã‚„è¨ºç™‚å†…å®¹ã�«ã‚ˆã�£ã�¦ã�¯ã€�ã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚ã�§ã�¯ã�ªã��æ�¥é™¢ã�§ã�®è¨ºå¯Ÿã‚’ã�Šé¡˜ã�„ã�™ã‚‹å ´å�ˆã�Œã�‚ã‚Šã�¾ã�™ã€‚</p><p data-start="442" data-end="487">ä»¥ä¸Šã€�åˆ�ã‚�ã�¯æ�¥ç¶šä¸�è‰¯ã�ªã�©ã�”ä¸�ä¾¿ã�Œç”Ÿã�˜ã‚‹å�¯èƒ½æ€§ã�Œã�”ã�–ã�„ã�¾ã�™ã�Œã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚</p></div></div></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.05.29</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>è¨ºç™‚å ±é…¬æ”¹å®šã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>6/1ã�®è¨ºç™‚å ±é…¬æ”¹å®šã�«ä¼´ã�„ã€�è¨ºç™‚å†…å®¹ã�«å¤§ã��ã�ªå¤‰æ›´ã�Œã�ªã�„å ´å�ˆã�§ã‚‚ã€�çª“å�£ã�§ã�®ã�Šæ”¯æ‰•ã�„é‡‘é¡�ã�Œã�“ã‚Œã�¾ã�§ã�¨å¤šå°‘ç•°ã�ªã‚‹å ´å�ˆã�Œã�”ã�–ã�„ã�¾ã�™ã€‚ä½•å�’ã�”ç�†è§£ã�®ã�»ã�©ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚ã€€</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.04.27</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>ç‰¹å®šå�¥è¨ºã€€èƒƒã�Œã‚“æ¤œè¨ºã�ªã�©ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p class="isSelectedEnd"><strong>ä»¤å’Œ8å¹´åº¦ å¢¨ç”°åŒº å�¥è¨ºãƒ»ã�Œã‚“æ¤œè¨ºã�®ã�”æ¡ˆå†…</strong></p><p class="isSelectedEnd">ä»¤å’Œ8å¹´åº¦ã�®å¢¨ç”°åŒºç‰¹å®šå�¥è¨ºã�Šã‚ˆã�³å�„ç¨®ã�Œã‚“æ¤œè¨ºã�Œã€�<strong>5æœˆ11æ—¥ã‚ˆã‚Šé–‹å§‹</strong>ã�¨ã�ªã‚Šã�¾ã�™ã€‚<br>ç�¾åœ¨ã€�ã�™ã�§ã�«å�—ä»˜ã‚’é–‹å§‹ã�—ã�¦ã�Šã‚Šã�¾ã�™ã€‚</p><p class="isSelectedEnd">ã€�å®Ÿæ–½æœŸé–“ã€‘</p><div contenteditable="false"><hr></div><p class="isSelectedEnd">â–  ç‰¹å®šå�¥è¨ºï¼ˆ40æ­³ï½�74æ­³ï¼‰<br>2026å¹´5æœˆ11æ—¥ ï½� 2026å¹´10æœˆ31æ—¥</p><p class="isSelectedEnd">â–  èƒƒã�Œã‚“æ¤œè¨ºï¼ˆå†…è¦–é�¡æ¤œæŸ»ï¼�50æ­³ä»¥ä¸Šãƒ»2å¹´ã�«1å›�ï¼‰<br>2026å¹´5æœˆ11æ—¥ ï½� 2027å¹´2æœˆ28æ—¥</p><p class="isSelectedEnd">â€»èƒƒã�Œã‚“æ¤œè¨ºã�¯ã€�äº‹å‰�ã�«ã€Œå¢¨ç”°åŒºã�‘ã‚“ã�—ã‚“ãƒ€ã‚¤ã‚¢ãƒ«ï¼ˆ03-5608-1599ï¼‰ã€�ã�¾ã�Ÿã�¯é›»å­�ç”³è«‹ã�«ã�¦ã�Šç”³ã�—è¾¼ã�¿å¾Œã€�å½“é™¢ã�¸ã�”äºˆç´„ï¼ˆWEBã€�é›»è©±ã�©ã�¡ã‚‰ã‚‚å�¯ï¼‰ã‚’ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p><p class="isSelectedEnd">â€»é�®é�™å‰¤ã‚’ã�”å¸Œæœ›ã�®æ–¹ã�¯åˆ¥é€”+1500å††ã�„ã�Ÿã� ã��ã�¾ã�™ã€‚</p><div contenteditable="false"><hr></div><p class="isSelectedEnd">ã€�ã��ã�®ä»–å®Ÿæ–½æ¤œè¨ºã€‘</p><p class="isSelectedEnd">ãƒ»èƒƒã�Œã‚“ãƒªã‚¹ã‚¯æ¤œè¨ºï¼ˆãƒ”ãƒ­ãƒªè�Œæ¤œæŸ»ï¼‰<br>ãƒ»å¤§è…¸ã�Œã‚“æ¤œè¨ºï¼ˆä¾¿æ½œè¡€æ¤œæŸ»ï¼‰<br>ãƒ»å‰�ç«‹è…ºã�Œã‚“æ¤œè¨ºï¼ˆPSAæ�¡è¡€ï¼‰</p><div contenteditable="false"><hr></div><p class="isSelectedEnd">ã€�ã�”äºˆç´„æ–¹æ³•ã€‘</p><p class="isSelectedEnd">WEBã�¾ã�Ÿã�¯ã�Šé›»è©±ã�«ã�¦ã�”äºˆç´„ã‚’æ‰¿ã�£ã�¦ã�Šã‚Šã�¾ã�™ã€‚<br>ã�”ä¸�æ˜�ç‚¹ã�Œã�”ã�–ã�„ã�¾ã�—ã�Ÿã‚‰ã€�ã�Šæ°—è»½ã�«ã�Šå•�ã�„å�ˆã‚�ã�›ã��ã� ã�•ã�„ã€‚</p><p>â€»ã�ªã�Šã€�è‹¥å¹´è€…å�¥è¨ºã�¯7æœˆé–‹å§‹äºˆå®šã�§ã�™ã€‚</p><p><br data-mce-bogus="1"></p><p><br data-mce-bogus="1"></p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.04.21</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>5æœˆã€�6æœˆã‚¨ã‚³ãƒ¼æ¤œæŸ»ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>5æœˆã�®ã‚¨ã‚³ãƒ¼æ¤œæŸ»æ� ã�¯GWã�®é–¢ä¿‚ä¸Š13æ—¥,27æ—¥ ã�®å�ˆå‰�ã�¨ã�ªã‚Šã�¾ã�™ã€‚</p><p>6æœˆã�¯17æ—¥ã�®ã�¿ã�¨ã�ªã‚Šã�¾ã�™ã€‚</p><p>ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p><p><br data-mce-bogus="1"></p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.04.09</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>GW,5æœˆè¨ºç™‚ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p data-start="231" data-end="275">ã‚´ãƒ¼ãƒ«ãƒ‡ãƒ³ã‚¦ã‚£ãƒ¼ã‚¯æœŸé–“ã�¯ã€�<strong data-start="244" data-end="267">4æœˆ29æ—¥ã�Šã‚ˆã�³5æœˆ3æ—¥ã€œ6æ—¥ã�¾ã�§ä¼‘è¨º</strong>ã�¨ã�ªã‚Šã�¾ã�™ã€‚</p><p data-start="277" data-end="319">ã�¾ã�Ÿã€�5æœˆã�®åœŸæ›œæ—¥ã�¯<br data-start="287" data-end="290"><strong data-start="290" data-end="311">5æœˆ23æ—¥ã�¯è¨ºç™‚ã€�5æœˆ30æ—¥ã�¯ä¼‘è¨º</strong>ã�¨ã�ªã‚Šã�¾ã�™ã€‚</p><p data-start="321" data-end="351">ã�”ä¸�ä¾¿ã‚’ã�Šã�‹ã�‘ã�„ã�Ÿã�—ã�¾ã�™ã�Œã€�ã�©ã�†ã��ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2026.01.07</li>
+                <li class="top_news_cate"><em class="category_class3173">ä¸€èˆ¬ã�®ã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>è¶…éŸ³æ³¢ï¼ˆã‚¨ã‚³ãƒ¼ï¼‰æ¤œæŸ»ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>è¶…éŸ³æ³¢ï¼ˆã‚¨ã‚³ãƒ¼ï¼‰æ¤œæŸ»ã�ŒWEBã�‹ã‚‰ç›´æ�¥äºˆç´„ã�§ã��ã‚‹ã‚ˆã�†ã�«ã�ªã‚Šã�¾ã�—ã�Ÿã€‚</p><p>å½“é�¢ç¬¬ï¼‘ã€�ï¼“é€±ã�®ç�«æ›œAMã�¨ã�ªã‚Šã�¾ã�™ã€‚ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.10.03</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>å¤§è…¸ã‚«ãƒ¡ãƒ©äºˆç´„ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p data-start="50" data-end="159">èƒƒã‚«ãƒ¡ãƒ©ãƒ»å¤§è…¸ã‚«ãƒ¡ãƒ©ã�¨ã‚‚ã�«å¤šã��ã�®æ–¹ã�«ã�”åˆ©ç”¨ã�„ã�Ÿã� ã��ã€�æ„Ÿè¬�ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚<br data-start="88" data-end="91">ä¸€æ–¹ã�§ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ã�«ã�¤ã��ã�¾ã�—ã�¦ã�¯ã�”äºˆç´„ã�Œç�¾åœ¨ã�®ã�¨ã�“ã‚�ç´„1ãƒ¶æœˆå…ˆã�¾ã�§åŸ‹ã�¾ã�£ã�¦ã�Šã‚Šã€�ã�™ã��ã�«ã�”æ¡ˆå†…ã�§ã��ã�ªã�„çŠ¶æ³�ã�Œç¶šã�„ã�¦ã�Šã‚Šã�¾ã�™ã�“ã�¨ã‚’å¿ƒã‚ˆã‚Šã�Šè©«ã�³ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚</p><p data-start="161" data-end="253">ã�ªã�Šã€�ç·Šæ€¥æ€§ã�Œé«˜ã�„ã�¨è€ƒã�ˆã‚‰ã‚Œã‚‹å ´å�ˆã‚„æ—©ã‚�ã�®æ¤œæŸ»ã‚’ã�”å¸Œæœ›ã�®æ–¹ã�«ã�¤ã��ã�¾ã�—ã�¦ã�¯ã€�çŠ¶æ³�ã�«ã‚ˆã‚Šå¯¾å¿œå�¯èƒ½ã�ªæ—¥ã‚‚ã�”ã�–ã�„ã�¾ã�™ï¼ˆæœˆãƒ»æœ¨ãƒ»é‡‘ã�«é™�ã‚Šã�¾ã�™ï¼‰ã€‚ã�¾ã�šã�¯ã�Šé›»è©±ã�«ã�¦ã�”ç›¸è«‡ã�„ã�Ÿã� ã�‘ã�¾ã�™ã�¨å¹¸ã�„ã�§ã�™ã€‚</p><p data-start="161" data-end="253">ã�¾ã�Ÿã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ã‚’ä¿�é™ºè¨ºç™‚ã�§è¡Œã�†å ´å�ˆã€�å¿…ã�šäº‹å‰�ã�®è¨ºå¯Ÿã�Œå¿…è¦�ã�§ã�™ã€‚ã�”ç�†è§£ã�®ã�»ã�©ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.10.01</li>
+                <li class="top_news_cate"><em class="category_class3173">ä¸€èˆ¬ã�®ã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>ï¼‘å‘¨å¹´ã�®ã�”æŒ¨æ‹¶</h3>
+            <div class="top_news_text"><p><p>ã�Šã�‹ã�’ã�•ã�¾ã�§MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸã�¯ã€�10æœˆ1æ—¥ã�«é–‹é™¢ï¼‘å‘¨å¹´ã‚’è¿�ã�ˆã‚‹ã�“ã�¨ã�Œã�§ã��ã�¾ã�—ã�Ÿã€‚<br data-start="162" data-end="165">åœ°åŸŸã�®çš†æ§˜ã�«æ¸©ã�‹ã��è¦‹å®ˆã�£ã�¦ã�„ã�Ÿã� ã��ã€�ã�“ã�“ã�¾ã�§æ­©ã‚“ã�§ã�“ã‚‰ã‚Œã�Ÿã�“ã�¨ã�«å¿ƒã‚ˆã‚Šæ„Ÿè¬�ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚<br data-start="209" data-end="212">ã�“ã‚Œã�‹ã‚‰ã‚‚ã€Œæ›³èˆŸã�§<strong>ã�‚ã�Ÿã�¾</strong>ã�¨<strong>ã�Šã�ªã�‹</strong>ã�®ã�“ã�¨ã�ªã‚‰<strong>ã�¾ã‚‹ã‚¯ãƒª</strong>ã€�ã�¨ä¿¡é ¼ã�„ã�Ÿã� ã�‘ã‚‹ã‚ˆã�†ã€�ã‚¹ã‚¿ãƒƒãƒ•ä¸€å�Œèª å¿ƒèª æ„�åŠªã‚�ã�¦ã�¾ã�„ã‚Šã�¾ã�™ã€‚<br data-start="266" data-end="269">ä»Šå¾Œã�¨ã‚‚å¤‰ã‚�ã‚‰ã�¬ã�”æ”¯æ�´ã�®ã�»ã�©ã€�ã�©ã�†ã��ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚</p><p>MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸã€€é™¢é•·ã€€ä¸¸å±± å�²æ™ƒã€€</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.06.26</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>å¤§è…¸ã‚«ãƒ¡ãƒ©ã�®äºˆç´„æ–¹æ³•ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>å¤§è…¸ã‚«ãƒ¡ãƒ©ï¼ˆå¤§è…¸å†…è¦–é�¡ï¼‰æ¤œæŸ»å¸Œæœ›æ—¥ã‚’ç›´æ�¥WEBã�‹ã‚‰äºˆç´„ã�™ã‚‹ã�“ã�¨ã�Œã�§ã��ã�¾ã�™ã€‚é›»è©±ã�«ã�¦äºˆç´„ã�™ã‚‹ã�“ã�¨ã‚‚å�¯èƒ½ã�§ã�™ã€‚</p><p><span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);"><strong>äºˆç´„ã�®éš›ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ä»®äºˆç´„ã€‘ã�¨ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©äº‹å‰�è¨ºå¯Ÿã€‘ã�®<span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">ï¼’ã�¤ã�®äºˆç´„</span>ã�Œå¿…è¦�</strong></span>ã�§ã�™ã€‚</p><p>Step1: ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ä»®äºˆç´„ã€‘ã�‹ã‚‰æ¤œæŸ»ã�—ã�Ÿã�„å¸Œæœ›ã�®æ—¥ã‚’é�¸ã�³ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚èƒƒã‚«ãƒ¡ãƒ©ã‚‚å�Œæ™‚ã�«è¡Œã�„ã�Ÿã�„æ–¹ã‚‚ã�“ã�¡ã‚‰ã�‹ã‚‰ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚</p><p>Step2: ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©äº‹å‰�è¨ºå¯Ÿã€‘ã�‹ã‚‰äº‹å‰�ã�®æ¤œæŸ»èª¬æ˜�æ—¥ã‚’ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚ã€€ä¿�é™ºè¨ºç™‚ã�§æ¤œæŸ»ã�™ã‚‹å ´å�ˆã€�å¯¾é�¢ã�§ã�®äº‹å‰�è¨ºå¯Ÿã�¯<strong>å¿…é ˆ</strong>ã�§ã�™ã€‚ã�¾ã�Ÿä»–ã�«ä¸‹å‰¤ã�®ã�Šæ¸¡ã�—ã‚„ä¸‹å‰¤ã�®æœ�ç”¨æ–¹æ³•ãƒ»æ¤œæŸ»å‰�ã�®é£Ÿäº‹ã�«ã�¤ã�„ã�¦ã�®èª¬æ˜�ã�Œã�‚ã‚Šã�¾ã�™ã�®ã�§ã€�æ¤œæŸ»å¸Œæœ›æ—¥ã�®3æ—¥ä»¥ä¸Šå‰�ï¼ˆè¡€æ¶²ã‚’ã‚µãƒ©ã‚µãƒ©ã�«ã�™ã‚‹è–¬ã‚’å†…æœ�ã�—ã�¦ã�„ã‚‹å ´å�ˆã�¯7æ—¥ä»¥ä¸Šå‰�ï¼‰ã�¾ã�§ã�«å�—è¨ºã�Œå¿…è¦�ã�¨ã�ªã‚Šã�¾ã�™ã€‚ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©äº‹å‰�è¨ºå¯Ÿã€‘ã‚’å�—è¨ºã�„ã�Ÿã� ã�„ã�Ÿå¾Œã�«<span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);"><strong>æœ¬äºˆç´„</strong></span>ã�¨ã�•ã�›ã�¦ã�„ã�Ÿã� ã��ã�¾ã�™ã€‚</p><p>äº‹å‰�è¨ºå¯Ÿã�®æ� ã�«ã�¤ã��ã�¾ã�—ã�¦ã�¯ã€�16:00ã�¾ã�§ã�®<span style="text-decoration: underline;" data-mce-style="text-decoration: underline;"><span style="color: rgb(0, 0, 0); text-decoration: underline;" data-mce-style="color: rgb(0, 0, 0); text-decoration: underline;">æ¶ˆåŒ–å™¨å†…ç§‘ã�®æ� ã�¨ã�¯åˆ¥</span></span>ã�«ã�ªã‚‹ã�Ÿã‚�ã€�<strong>ã‚¯ãƒªãƒ‹ãƒƒã‚¯ã�®å…¨è¨ºç™‚æ—¥ãƒ»æœ€çµ‚è¨ºç™‚æ™‚é–“ã�¾ã�§å¯¾å¿œ</strong>ã�—ã�¦ã�Šã‚Šã�¾ã�™ã€‚ï¼ˆæœˆæ›œã�¯19:45ã�¾ã�§å�¯èƒ½ã�§ã�™ã€‚ï¼‰</p><p><strong>å¿…ã�š<span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);">ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ä»®äºˆç´„ã€‘ã�¨ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©äº‹å‰�è¨ºå¯Ÿã€‘<span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">ï¼’ã�¤ã�®äºˆç´„</span></span>ã‚’ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚</strong>ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©äº‹å‰�è¨ºå¯Ÿã€‘ã�®äºˆç´„ã�Œã�ªã�„å ´å�ˆã�¯ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ä»®äºˆç´„ã€‘ã�¯ç„¡åŠ¹ã�¨ã�ªã‚Šã�¾ã�™ã€‚</p><p>ã€Œæ¤œæŸ»ã‚’å�—ã�‘ã�Ÿã�„ã�Œæ¤œæŸ»ã�®æ—¥ã�«ã�¡ã�¯æœªå®šã€� ã€Œã�Šè…¹ã�®ç—‡çŠ¶ã�¯ã�‚ã‚‹ã�‘ã‚Œã�©ã€�æ¤œæŸ»ã‚’å�—ã�‘ã�Ÿæ–¹ã�Œè‰¯ã�„ã�®ã�‹ã‚�ã�‹ã‚‰ã�ªã�„ã€�ã€Œå¤§è…¸ã‚«ãƒ¡ãƒ©ã�Œã�©ã�†ã�„ã�£ã�Ÿæ¤œæŸ»ã�ªã�®ã�‹çŸ¥ã‚Šã�Ÿã�„ã€�ã�¨ã�„ã�†æ–¹ã�¯ã€�ã�¾ã�šã�¯ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©äº‹å‰�è¨ºå¯Ÿã€‘ã‚’å�—è¨ºã�—èª¬æ˜�ã‚’è��ã�„ã�Ÿä¸Šã�§æ¤œæŸ»ã‚’å�—ã�‘ã‚‹ã�‹ã�©ã�†ã�‹æ±ºã‚�ã�¦ã�„ã�Ÿã� ã��ã�“ã�¨ã‚‚å�¯èƒ½ã�§ã�™ã€‚</p><p>ã�”ä¸�æ˜�ã�ªç‚¹ã�Œã�‚ã‚Šã�¾ã�—ã�Ÿã‚‰ã�Šæ°—è»½ã�«ã�Šé›»è©±ã�§ã�”ç›¸è«‡ã��ã� ã�•ã�„ã€‚</p><p><br data-mce-bogus="1"></p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.06.24</li>
+                <li class="top_news_cate"><em class="category_class3173">ä¸€èˆ¬ã�®ã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>ãƒ¡ãƒ‡ã‚£ã‚«ãƒ«ãƒ€ã‚¤ã‚¨ãƒƒãƒˆå¤–æ�¥é–‹è¨­ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>å½“é™¢ã�§ã�¯åŒ»å¸«ã�«ã‚ˆã‚‹ç®¡ç�†ã�«åŸºã�¥ã��â‘ ãƒ�ãƒ³ã‚¸ãƒ£ãƒ­â‘¡ãƒªãƒ™ãƒ«ã‚µã‚¹ã‚’ç”¨ã�„ã�Ÿè–¬ç‰©ç™‚æ³•ã‚’ä¸­å¿ƒã�¨ã�—ã�Ÿãƒ¡ãƒ‡ã‚£ã‚«ãƒ«ãƒ€ã‚¤ã‚¨ãƒƒãƒˆã‚’å°�å…¥ã�„ã�Ÿã�—ã�¾ã�™ã€‚æ—¥æœ¬ã�§ã�¯ä¿�é™ºé�©å¿œå¤–ã�§ã�‚ã‚‹ã�Ÿã‚�ã€�å…¨é¡�è‡ªè²»è¨ºç™‚ã�¨ã�ªã‚Šã�¾ã�™ã€‚æ¯”è¼ƒçš„ç¶™ç¶šã�—ã‚„ã�™ã�„ä¾¡æ ¼è¨­å®šã�¨ã�—ã�¾ã�—ã�Ÿã€‚æ²»ç™‚ã�«èˆˆå‘³ã�‚ã‚‹æ–¹ã�¯WEBäºˆç´„ã€�ä¸€èˆ¬å†…ç§‘ã€‘ã‚‚ã�—ã��ã�¯é›»è©±ã�«ã�¦ã�Šå•�ã�„å�ˆã‚�ã�›ã��ã� ã�•ã�„ã€‚</p><p><br></p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.05.19</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>å¢¨ç”°åŒºå�¥åº·è¨ºæ–­ãƒ»ã�Œã‚“æ¤œè¨ºã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>2025å¹´åº¦ã�®ç‰¹å®šå�¥åº·è¨ºæ–­å�Šã�³ç”Ÿæ´»ç¿’æ…£ç—…äºˆé˜²å�¥è¨ºã�®å�—ä»˜ã�Œå§‹ã�¾ã‚Šã�¾ã�™ã€‚</p><p>æœŸé–“ã�¯10æœˆ31æ—¥ã�¾ã�§ã�§ã�™ã€‚</p><p>å¤§è…¸ã�Œã‚“æ¤œè¨ºã€�èƒƒã�Œã‚“æ¤œè¨ºï¼ˆèƒƒã‚«ãƒ¡ãƒ©æ¤œæŸ»ï¼‰ã€�èƒƒã�Œã‚“ãƒªã‚¹ã‚¯æ¤œè¨ºã€�å‰�ç«‹è…ºã�Œã‚“æ¤œè¨ºã‚‚ä½µã�›ã�¦å�—ä»˜ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p><p>äºˆç´„ã�¯â˜�ï¸�ã€�WEBäºˆç´„ã�§è¡Œã�£ã�¦ã�„ã�¾ã�™ã€‚</p><p>â€»ç‰¹å®šå�¥è¨ºï¼‹èƒƒã�Œã‚“æ¤œè¨ºï¼ˆèƒƒã‚«ãƒ¡ãƒ©æ¤œæŸ»ï¼‰å¸Œæœ›ã�®å ´å�ˆã�¯WEBã�«ã�¦ã€�èƒƒã‚«ãƒ¡ãƒ©äºˆç´„ã€‘ã�‹ã‚‰ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.04.21</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>å½“é™¢ã�®å…¬å¼�LINEã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>å…¬å¼�LINEã‚’ä½œæˆ�ã�—ã�¾ã�—ã�Ÿ</p><p>LINEã‚’é€šã�˜ã�¦ã�”äºˆç´„ã�™ã‚‹ã�“ã�¨ã‚‚å�¯èƒ½ã�§ã�™ã€‚ã�¾ã�Ÿå½“é™¢ã�®æœ€æ–°æƒ…å ±ã‚„ã�Šå¾—ã�ªæƒ…å ±ã�ªã�©ã‚‚é…�ä¿¡ã�—ã�¦ã�„ã��äºˆå®šã�§ã�™ã€‚</p><p>ã�—ã�¤ã�“ã�„åºƒå‘Šã�ªã�©ã�¯ã�”ã�–ã�„ã�¾ã�›ã‚“ã�®ã�§ã€�ã�œã�²å�‹é�”è¿½åŠ ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ï¼�</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.03.11</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>æœˆæ›œæ—¥ã�®ã‚¢ãƒ•ã‚¿ãƒ¼ï¼–å¤–æ�¥é–‹è¨­ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>4æœˆã‚ˆã‚Š<span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);"><strong><span style="color: rgb(0, 0, 0);" data-mce-style="color: rgb(0, 0, 0);"><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;">ã‚¢ãƒ•ã‚¿ãƒ¼ï¼–å¤–æ�¥</span></span></strong><span style="color: rgb(0, 0, 0);" data-mce-style="color: rgb(0, 0, 0);">ã�¨é¡Œã�—<span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);"><strong>æ¯�é€±æœˆæ›œ</strong></span></span></span>å�ˆå¾Œã�®è¨ºç™‚æ™‚é–“ã‚’<span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);"><strong><span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);">2</span>0:00è¿„</strong></span>ã�«å»¶é•·ã�„ã�Ÿã�—ã�¾ã�™ã€‚ï¼ˆ19:45è¿„ã�«ã�”æ�¥é™¢ã��ã� ã�•ã�„ï¼‰</p><p>å¹³æ—¥ã�¯é�…ã�„æ™‚é–“ã�—ã�‹å�—è¨ºã�Œã�§ã��ã�ªã�„æ–¹ã�®å®šæœŸå�—è¨ºã�‹ã‚‰åˆ�è¨ºã�®æ–¹ã�¾ã�§å�—è¨ºå�¯èƒ½ã�§ã�™ã€‚å¼•ã��ç¶šã��ä½•å�’ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ã�„ã�Ÿã�—ã�¾ã�™ã€‚ç‚¹æ»´å¸Œæœ›ã�®æ–¹ã�¯ã�ªã‚‹ã�¹ã��19:00ã�¾ã�§ã�®æ� ã�§ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.03.05</li>
+                <li class="top_news_cate"><em class="category_class3173">ä¸€èˆ¬ã�®ã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>å½“é™¢ã�®é™¢é•·ã�Œå�–æ��ã‚’å�—ã�‘ã�¾ã�—ã�Ÿ</h3>
+            <div class="top_news_text"><p><p>é™¢é•·ã�Œèµ¤ã�¡ã‚ƒã‚“ã�®é ­ã�®å½¢ã�«ã�¤ã�„ã�¦ã�®ã‚¤ãƒ³ã‚¿ãƒ“ãƒ¥ãƒ¼ã‚’å�—ã�‘ã�¾ã�—ã�Ÿã€‚ã�”èˆˆå‘³ã�‚ã‚‹æ–¹ã�¯æ˜¯é��ãƒ�ãƒŠãƒ¼ã‚’ã‚¯ãƒªãƒƒã‚¯ã�—ã�¦ã�”è¦§ã��ã� ã�•ã�„ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.02.28</li>
+                <li class="top_news_cate"><em class="category_class3173">ä¸€èˆ¬ã�®ã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>ãƒ‰ãƒƒã‚¯ã�®ã�ŠçŸ¥ã‚‰ã�›</h3>
+            <div class="top_news_text"><p><p>å½“é™¢ã�§ã�¯æ¶ˆåŒ–å™¨å†…è¦–é�¡ãƒ‰ãƒƒã‚¯ã�®ä»–ã�«ã‚‚<strong>è„³ãƒ‰ãƒƒã‚¯ã€�ãƒ¡ã‚¿ãƒœãƒ‰ãƒƒã‚¯</strong>ã€�<strong>ãƒ•ãƒ¬ã‚¤ãƒ«ãƒ‰ãƒƒã‚¯</strong>ã€�<strong>è‚ºãƒ‰ãƒƒã‚¯</strong>ã�Œå�—ã�‘ã‚‰ã‚Œã�¾ã�™ã€‚</p><p>ç‰¹ã�«65æ­³ä»¥ä¸Šã�®æ–¹ã�«ã�¯<span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);"><strong>ãƒ•ãƒ¬ã‚¤ãƒ«ãƒ‰ãƒƒã‚¯</strong></span>ã�Œã‚ªã‚¹ã‚¹ãƒ¡ã�§ã�™ã€‚ã�”äºˆç´„ã�¯WEBã�¨é›»è©±ã�«ã�¦å�—ã�‘ä»˜ã�‘ã�¦ã�„ã�¾ã�™ã€‚è©³ç´°ã�¯å½“HPè¨ºç™‚å†…å®¹ï¼�å�„ç¨®ãƒ‰ãƒƒã‚¯ã‚ˆã‚Šã�”å�‚ç…§ã��ã� ã�•ã�„ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.02.18</li>
+                <li class="top_news_cate"><em class="category_class3173">ä¸€èˆ¬ã�®ã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>æ¶ˆåŒ–å™¨ï¼ˆå†…è¦–é�¡ï¼‰ãƒ‰ãƒƒã‚¯ã�®ã�ŠçŸ¥ã‚‰ã�›</h3>
+            <div class="top_news_text"><p><p>ï¼“ï¼•æ­³ä»¥ä¸Šã�«ã�ªã�£ã�Ÿã‚‰å�¥è¨ºã�®ä¸€ç’°ã�¨ã�—ã�¦èƒƒãƒ»å¤§è…¸å†…è¦–é�¡æ¤œæŸ»ã‚’å�—ã�‘ã�¦ã�¿ã�¾ã�›ã‚“ã�‹ï¼Ÿå½“é™¢ã�§ã�¯é�®é�™å‰¤ã‚’ä½¿ç”¨ã�—ã�Ÿæ¥½ã�«å�—ã�‘ã‚‰ã‚Œã‚‹æ¶ˆåŒ–å™¨å†…è¦–é�¡ãƒ‰ãƒƒã‚¯ã‚’é–‹å§‹ã�„ã�Ÿã�—ã�¾ã�—ã�Ÿã€‚ã�”å¤«å¦»ã€�ãƒ‘ãƒ¼ãƒˆãƒŠãƒ¼ã�§ä¸€ç·’ã�«æ¤œæŸ»ã‚’ã�”äºˆç´„ã�„ã�Ÿã� ã�„ã�Ÿå ´å�ˆã€�ã�Šå¾—ã�ªç‰¹å…¸ã�Œã�”ã�–ã�„ã�¾ã�™ã€‚æ˜¯é��ã�”æ¤œè¨�ã��ã� ã�•ã�„ã€‚</p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2025.02.12</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>å½“é™¢ã�®äºˆç´„ã‚·ã‚¹ãƒ†ãƒ ï¼ˆå¾…ã�¡æ™‚é–“ï¼‰ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>å¹³ç´ ã‚ˆã‚Šå½“é™¢ã‚’ã�”æ„›é¡§é ‚ã��ã�‚ã‚Šã�Œã�¨ã�†ã�”ã�–ã�„ã�¾ã�™ã€‚</p><p>é–‹é™¢ã�—ã�¦å¹¸ã�„å¤šã��ã�®æ‚£è€…æ§˜ã�«ã�”æ�¥é™¢ã�„ã�Ÿã� ã��å¤§å¤‰å…‰æ „ã�«æ€�ã�„ã�¾ã�™ã€‚</p><p>å½“é™¢ã�®äºˆç´„ã‚·ã‚¹ãƒ†ãƒ ã�«ã�¤ã�„ã�¦ã�”èª¬æ˜�ã�•ã�›ã�¦ã�„ã�Ÿã� ã��ã�¾ã�™ã€‚å½“é™¢ã�¯WEBã�«ã‚ˆã‚‹30åˆ†å�˜ä½�ã�®äºˆç´„æ� ã‚’æ�¥é™¢é †ã�«è¨ºå¯Ÿã�•ã�›ã�¦ã�„ã�Ÿã� ã��ã‚·ã‚¹ãƒ†ãƒ ã‚’æ�¡ç”¨ã�—ã�¦ã�„ã�¾ã�™ã�Œã€�<strong><span style="text-decoration: underline; color: rgb(224, 62, 45);" data-mce-style="text-decoration: underline; color: rgb(224, 62, 45);">å®Œå…¨äºˆç´„åˆ¶ã�§ã�¯ã�ªã�„</span></strong>ã�Ÿã‚�å½“æ—¥ã�«ã�”äºˆç´„(ã‚‚ã�—ã��ã�¯ç›´æ�¥)ã�•ã‚Œã‚‹åˆ�è¨ºã�®æ‚£è€…æ§˜ã�Œå�Œæ™‚ã�«è¤‡æ•°ã�„ã‚‰ã�£ã�—ã‚ƒã�£ã�Ÿã‚Šç·Šæ€¥å¯¾å¿œã�Œé‡�ã�ªã�£ã�Ÿçµ�æ�œã€�æ··é›‘ã�Œç”Ÿã�˜ã�¦ã�—ã�¾ã�„äºˆç´„æ™‚é–“ã�‹ã‚‰30-60åˆ†å‰�å¾Œï¼ˆä¾‹ã�ˆã�°16:00-16:30ã�®æ� ã�§é�…ã��ã�¦17:00é ƒï¼‰ã�Šå¾…ã�¡ã�„ã�Ÿã� ã��ã�“ã�¨ã‚‚ç¨€ã�«ã�”ã�–ã�„ã�¾ã�™ã€‚èª ã�«ç”³ã�—è¨³ã�”ã�–ã�„ã�¾ã�›ã‚“ã�Œä½•å�’ã�”ç�†è§£ã�®ã�»ã�©ã‚ˆã‚�ã�—ã��ã�Šé¡˜ã�„ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚</p><p>â€»<span style="background-color: rgb(236, 240, 241); color: rgb(224, 62, 45);" data-mce-style="background-color: rgb(236, 240, 241); color: rgb(224, 62, 45);"><strong>å‰�æ—¥ã�¾ã�§ã�«</strong></span>ã�”äºˆç´„é ‚ã�„ã�Ÿæ‚£è€…æ§˜ã‚’å„ªå…ˆçš„ã�«è¨ºã�•ã�›ã�¦é ‚ã��æ–¹é‡�ã�§ã�™ã�Œã€�çŠ¶æ³�ã�«ã‚ˆã‚Šå¤šå°‘é †ç•ªã�Œå‰�å¾Œã�™ã‚‹ã�“ã�¨ã‚‚ã�‚ã‚Šã�¾ã�™ã€‚</p><p>â€»åœŸæ›œæ—¥ã�¯ã�§ã��ã‚‹ã� ã�‘åˆ�è¨ºã�®æ–¹ã�®å�—è¨ºã�™ã‚‹æ©Ÿä¼šã‚’ä½œã�£ã�¦ã�‚ã�’ã�Ÿã�„ç‚ºã€�å†�è¨ºã�®æ–¹ã�¯å�¯èƒ½ã�§ã�‚ã‚Œã�°å¹³æ—¥å�—è¨ºã‚’ã�Šã�™ã�™ã‚�ã�•ã�›ã�¦ã�„ã�Ÿã� ã��ã�¾ã�™ã€‚</p><p><span style="color: rgb(35, 111, 161);" data-mce-style="color: rgb(35, 111, 161);"><em><strong>é€†ã�«WEBä¸Šã�§æ� ã�Œç©ºã�„ã�¦ã�„ã�ªã��ã�¦ã‚‚å�—è¨ºå�¯èƒ½ã�ªå ´å�ˆã�Œã�”ã�–ã�„ã�¾ã�™ã€‚ã��ã�®éš›ã�¯ã�Šé›»è©±ã�«ã�¦ã�”é€£çµ¡ã��ã� ã�•ã�„ã€‚</strong></em></span></p></p></div>
+            </div></li>
+                            <li>
+        <div class="top_news_info">
+            <ul class="top_news_desc">
+                <li class="top_news_date">2024.12.09</li>
+                <li class="top_news_cate"><em class="category_class3183">é‡�è¦�ã�ªã�ŠçŸ¥ã‚‰ã�›</em></li>
+            </ul>
+			<h3>èƒƒã‚«ãƒ¡ãƒ©ï¼ˆä¸Šéƒ¨å†…è¦–é�¡æ¤œæŸ»ï¼‰ã�®äºˆç´„ã�«ã�¤ã�„ã�¦</h3>
+            <div class="top_news_text"><p><p>ã�“ã‚Œã�¾ã�§èƒƒã‚«ãƒ¡ãƒ©ï¼ˆä¸Šéƒ¨å†…è¦–é�¡æ¤œæŸ»ï¼‰ã�”å¸Œæœ›ã�®æ–¹ã�¯ä¸€åº¦å¤–æ�¥è¨ºå¯Ÿå¾Œã�«æ¤œæŸ»ã‚’ã�”äºˆç´„ã�„ã�Ÿã� ã�„ã�¦ã�„ã�¾ã�—ã�Ÿã�Œã€�ã�“ã‚Œã�‹ã‚‰ã�¯å¤–æ�¥å�—è¨ºã�›ã�šã�«<span style="color: rgb(224, 62, 45);" data-mce-style="color: rgb(224, 62, 45);"><strong>ç›´æ�¥WEBäºˆç´„ã�Œå�¯èƒ½</strong></span>ã�«ã�ªã‚Šã�¾ã�—ã�Ÿã€‚ã�ªã�Šã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ï¼ˆä¸‹éƒ¨å†…è¦–é�¡æ¤œæŸ»ï¼‰ã�«ã�¤ã��ã�¾ã�—ã�¦ã�¯å¾“æ�¥é€šã‚Šä¸€åº¦å¤–æ�¥è¨ºå¯Ÿã�Œå¿…è¦�ã�«ã�ªã‚Šã�¾ã�™ã�®ã�§ã�”äº†æ‰¿ã��ã� ã�•ã�„ã€‚</p></p></div>
+            </div></li>
+            </ul>
+
+	<div class="btn01">
+				<a href="https://maluclinic.com/news">ã�ŠçŸ¥ã‚‰ã�›ã�®ä¸€è¦§ã�¯ã�“ã�¡ã‚‰</a>
+	</div>
+
+    </div>
+</section>
+<!--============================== â–²ã�ŠçŸ¥ã‚‰ã�› ==============================-->
+
+
+
+<!--============================== â–¼ãƒ–ãƒ­ã‚° ==============================-->
+<!--============================== â–²ãƒ–ãƒ­ã‚° ==============================-->
+
+
+<!--============================== â–¼åŒ»å¸«ç´¹ä»‹ ==============================-->
+<section class="sec_top_doctor">
+	<div class="box1">
+			
+	<div class="top_greeting_wrap" id="top_greeting_wrap01">
+			<h2>ã�”æŒ¨æ‹¶</h2>
+		<div class="top_greeting_flex">
+			<!-- â–¼ç”»åƒ� -->
+						<!-- â–²ç”»åƒ� -->	
+
+			<!-- â–¼ãƒ†ã‚­ã‚¹ãƒˆ -->	
+						<div class="text_w100">
+								<div class="relative basis-auto flex-col -mb-(--composer-overlap-px) pb-(--composer-overlap-px) [--composer-overlap-px:28px] grow flex">
+<div class="flex flex-col text-sm">
+<section class="text-token-text-primary w-full focus:outline-none [--shadow-height:45px] has-data-writing-block:pointer-events-none has-data-writing-block:-mt-(--shadow-height) has-data-writing-block:pt-(--shadow-height) [&amp;:has([data-writing-block])&gt;*]:pointer-events-auto scroll-mt-[calc(var(--header-height)+min(200px,max(70px,20svh)))]" dir="auto" data-turn-id="request-WEB:34eaba16-78aa-4c42-b999-be79bf2fd7f8-0" data-testid="conversation-turn-2" data-scroll-anchor="true" data-turn="assistant">
+<div class="text-base my-auto mx-auto pb-10 [--thread-content-margin:var(--thread-content-margin-xs,calc(var(--spacing)*4))] @w-sm/main:[--thread-content-margin:var(--thread-content-margin-sm,calc(var(--spacing)*6))] @w-lg/main:[--thread-content-margin:var(--thread-content-margin-lg,calc(var(--spacing)*16))] px-(--thread-content-margin)">
+<div class="[--thread-content-max-width:40rem] @w-lg/main:[--thread-content-max-width:48rem] mx-auto max-w-(--thread-content-max-width) flex-1 group/turn-messages focus-visible:outline-hidden relative flex w-full min-w-0 flex-col agent-turn">
+<div class="flex max-w-full flex-col gap-4 grow">
+<div data-message-author-role="assistant" data-message-id="316ba624-a450-4f83-8374-be670d24bf57" dir="auto" data-message-model-slug="gpt-5-3" class="min-h-8 text-message relative flex w-full flex-col items-end gap-2 text-start break-words whitespace-normal outline-none keyboard-focused:focus-ring [.text-message+&amp;]:mt-1" data-turn-start-message="true" tabindex="0">
+<div class="flex w-full flex-col gap-1 empty:hidden">
+<div class="markdown prose dark:prose-invert w-full wrap-break-word light markdown-new-styling">
+<p data-start="0" data-end="39"><strong>åœ°åŸŸã�«å¯„ã‚Šæ·»ã�„ã€�æ€¥ã�ªä¸�èª¿ã‚‚æœªæ�¥ã�®å�¥åº·ã‚‚å®‰å¿ƒã�—ã�¦ç›¸è«‡ã�§ã��ã‚‹åŒ»ç™‚ã‚’ã€�ã‚‚ã�£ã�¨èº«è¿‘ã�«ã€‚</strong></p>
+<p data-start="41" data-end="174">ã€ŒMALUã€�ã�¯ãƒ�ãƒ¯ã‚¤èª�ã�§ã€Œå®‰ã‚‰ã��ã€�ã‚„ã€Œå¹³å’Œã€�ã‚’æ„�å‘³ã�—ã�¾ã�™ã€‚ã��ã�®å��ã�®ã�¨ã�Šã‚Šã€�åœ°åŸŸã�®çš†ã�•ã�¾ã�«å®‰å¿ƒã�—ã�¦ã�„ã�Ÿã� ã�‘ã‚‹åŒ»ç™‚ã‚’æ��ä¾›ã�—ã€�ç�¾åœ¨ã� ã�‘ã�§ã�ªã��å°†æ�¥ã�¾ã�§ç¶šã��å�¥åº·ã‚’æ”¯ã�ˆã�¦ã�„ã��ã�Ÿã�„ã�¨ã�„ã�†æƒ³ã�„ã‚’è¾¼ã‚�ã�¦ã€�2024å¹´10æœˆã€�å¢¨ç”°åŒºæ›³èˆŸã�«ã€ŒMALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸã€�ã‚’é–‹é™¢ã�„ã�Ÿã�—ã�¾ã�—ã�Ÿã€‚</p>
+<p class="isSelectedEnd"><span>å½“é™¢ã�§ã�¯ã€�è„³ç¥�çµŒå¤–ç§‘å°‚é–€åŒ»ã�¨æ¶ˆåŒ–å™¨å†…ç§‘å°‚é–€åŒ»ã�®2å��ä½“åˆ¶ã�§è¨ºç™‚ã‚’è¡Œã�„ã€�ã€Œã�‚ã�Ÿã�¾ã€�ã�¨ã€Œã�Šã�ªã�‹ã€�ã‚’è»¸ã�«æ€¥ã�ªç—‡çŠ¶ã�‹ã‚‰ç”Ÿæ´»ç¿’æ…£ç—…ã€�äºˆé˜²åŒ»ç™‚ã�¾ã�§å¹…åºƒã��å¯¾å¿œã�—ã�¦ã�„ã�¾ã�™ã€‚é ­ç—›å¤–æ�¥ã‚„èª�çŸ¥ç—‡å¤–æ�¥ã€�å¥³æ€§å°‚é–€åŒ»ã�«ã‚ˆã‚‹å†…è¦–é�¡æ¤œæŸ»ã�«ã‚‚å¯¾å¿œã�—ã€�ã�Šå­�ã�•ã�¾ã�‹ã‚‰ã�”é«˜é½¢ã�®æ–¹ã�¾ã�§ã€�ã�”å®¶æ—�çš†ã�•ã�¾ã�Œå®‰å¿ƒã�—ã�¦ç›¸è«‡ã�§ã��ã‚‹â€œå°‚é–€æ€§ã‚’æŒ�ã�£ã�Ÿãƒ•ã‚¡ãƒŸãƒªãƒ¼ã‚¯ãƒªãƒ‹ãƒƒã‚¯â€�ã‚’ç›®æŒ‡ã�—ã�¦ã�„ã�¾ã�™ã€‚</span></p>
+<p class="isSelectedEnd"><span>ã�¾ã�Ÿã€�å�˜ã�«æ¤œæŸ»ã�®ã�¿ã‚’è¡Œã�†ã�®ã�§ã�¯ã�ªã��ã€�æ—¥å¸¸çš„ã�ªä½“èª¿ä¸�è‰¯ã�‹ã‚‰å°‚é–€çš„ã�ªè¨ºç™‚ã�¾ã�§ä¸€ã�¤ã�®ã‚¯ãƒªãƒ‹ãƒƒã‚¯ã�§ç›¸è«‡ã�§ã��ã‚‹â€œãƒ¯ãƒ³ã‚¹ãƒˆãƒƒãƒ—åŒ»ç™‚â€�ã‚’å¤§åˆ‡ã�«ã�—ã�¦ã�„ã�¾ã�™ã€‚åœ°åŸŸã�®çš†ã�•ã�¾ã�«ã�¨ã�£ã�¦ã€�ã€Œä½•ã�‹ã�‚ã�£ã�Ÿã‚‰ã�¾ã�šç›¸è«‡ã�—ã�¦ã�¿ã‚ˆã�†ã€�ã�¨æ€�ã�£ã�¦ã�„ã�Ÿã� ã�‘ã‚‹èº«è¿‘ã�ªâ€™â€™çœŸã�®ã�‹ã�‹ã‚Šã�¤ã�‘åŒ»â€™â€™ã�§ã�‚ã‚Šã�Ÿã�„ã�¨è€ƒã�ˆã�¦ã�„ã�¾ã�™ã€‚</span></p>
+<p><span>ã€ŒMALUã‚¯ãƒªï¼ˆã�¾ã‚‹ã‚¯ãƒªï¼‰ã€�ã�¨ã�—ã�¦è¦ªã�—ã�¾ã‚Œã‚‹å­˜åœ¨ã�¨ã�ªã‚Œã‚‹ã‚ˆã�†ã€�ã‚¹ã‚¿ãƒƒãƒ•ä¸€å�Œã€�å¿ƒã‚’è¾¼ã‚�ã�¦è¨ºç™‚ã�«ã�‚ã�Ÿã�£ã�¦ã�¾ã�„ã‚Šã�¾ã�™ã€‚</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+				
+				<!-- â–¼ç½²å�� -->
+								<div class="top_doctor_name">
+					<p>MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸã€€é™¢é•·<span>ä¸¸å±± å�²æ™ƒ (ã�¾ã‚‹ã‚„ã�¾ ã�µã�¿ã�‚ã��)</span></p>
+				</div>
+								<!-- â–²ç½²å�� -->
+				
+			</div>
+									<!-- â–²ãƒ†ã‚­ã‚¹ãƒˆ -->
+		</div>
+	</div><!-- .top_greeting_wrap -->
+
+										<div class="btn01"><a href="https://maluclinic.com/doctor">åŒ»å¸«ç´¹ä»‹ã�®ãƒšãƒ¼ã‚¸ã‚’è¦‹ã‚‹</a>
+			</div>
+				</div><!-- .box -->
+</section>
+<!--============================== â–²åŒ»å¸«ç´¹ä»‹ ==============================-->
+
+
+
+
+<!--============================== â–¼å½“é™¢ã�®ç‰¹å¾´ ==============================-->
+		<section class="sec_top_feature">
+		<div class="box1">
+		<h2>ã‚¯ãƒªãƒ‹ãƒƒã‚¯ã�®ç‰¹å¾´</h2>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>å°‚é–€åŒ»2å��ã�Œå¹…åºƒã��å°‚é–€æ€§ã�®é«˜ã�„åŒ»ç™‚ã‚’æ��ä¾›ã�—ã�¾ã�™</h3>															<div class="top_feature_text">
+									<p><img fetchpriority="high" decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/7735a0fd2a292a644f65f844fec97724.jpeg" alt="" width="380" height="253" class="alignleft wp-image-2262" /></p>
+<p data-start="96" data-end="222">å½“é™¢ã�¯ã€�<strong>é™¢é•·ï¼ˆè„³ç¥�çµŒå¤–ç§‘å°‚é–€åŒ»ãƒ»è„³è¡€ç®¡å†…æ²»ç™‚å°‚é–€åŒ»ï¼‰ã�¨å‰¯é™¢é•·ï¼ˆæ¶ˆåŒ–å™¨å†…ç§‘ãƒ»å†…è¦–é�¡å°‚é–€åŒ»ï¼‰</strong>ã€�å°‚é–€åŒ»2å��ä½“åˆ¶ã�§è¨ºç™‚ã‚’è¡Œã�£ã�¦ã�„ã�¾ã�™ã€‚<br />
+é ­ç—›ã‚„ã‚�ã�¾ã�„ã€�ã�—ã�³ã‚Œã€�ç‰©å¿˜ã‚Œã�ªã�©ã�‚ã�Ÿã�¾ã�®ç–¾æ‚£ã�‹ã‚‰ã€�èƒƒã‚«ãƒ¡ãƒ©ãƒ»å¤§è…¸ã‚«ãƒ¡ãƒ©ã‚„ã�Šã�ªã�‹ã�®ä¸�èª¿ã�¾ã�§å¹…åºƒã��å¯¾å¿œã€‚<br />
+ã�¾ã�Ÿã€�ç”Ÿæ´»ç¿’æ…£ç—…ã‚„é¢¨é‚ªã€�èŠ±ç²‰ç—‡ã�ªã�©ä¸€èˆ¬å†…ç§‘ã‚‚è¨ºç™‚ã�—ã�¦ã�Šã‚Šã€�ã�Šå­�ã�•ã�¾ã‚‚å�¯èƒ½ã�ªç¯„å›²ã�§å¯¾å¿œã�—ã�¾ã�™ã€‚<br />
+å�„ç¨®å�¥è¨ºãƒ»ãƒ‰ãƒƒã‚¯ã‚‚éš�æ™‚å�—ã�‘ä»˜ã�‘ã�¦ã�Šã‚Šã�¾ã�™ã€‚</p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>ç—…é™¢ãƒ¬ãƒ™ãƒ«ã�®å¤§å�‹è¨­å‚™ã‚’å°�å…¥</h3>															<div class="top_feature_text">
+									<p>ãƒ¬ãƒ³ãƒˆã‚²ãƒ³ã�¨å�Œç­‰ã�®ä½�ç·šé‡�ã�§æ’®å½±å�¯èƒ½ã�ª<span style="font-size: 16px;"><strong><span style="background-color: #ccffff;">CTè£…ç½®</span>ã€�<span style="background-color: #ccffff;">é«˜ç”»è³ªå†…è¦–é�¡ã‚·ã‚¹ãƒ†ãƒ (AIæ”¯æ�´)</span>ã€�<span style="background-color: #ccffff;">AIæ�­è¼‰ãƒ¬ãƒ³ãƒˆã‚²ãƒ³</span>ã€�<span style="background-color: #ccffff;">é«˜ç²¾åº¦ã‚¨ã‚³ãƒ¼</span></strong></span><span style="background-color: #ccffff;"><span style="background-color: #ffffff;">ã�ªã�©ã‚¯ãƒªãƒ‹ãƒƒã‚¯ãƒ¬ãƒ™ãƒ«ã�¨ã�—ã�¦ã�¯ç��ã�—ã�„å¤§å�‹è¨­å‚™ã�Œå‚™ã‚�ã�£ã�¦ã�„</span></span>ã�¾ã�™ã€‚ã‚¯ãƒªãƒ‹ãƒƒã‚¯ã�®æ©Ÿå‹•åŠ›ã‚’æ´»ã�‹ã�—è¿…é€Ÿã�«æ¤œæŸ»ã�Œå�—ã�‘ã‚‰ã‚Œã�¾ã�™ã€‚</p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/c7f8ac69de65ba116086922ae2ab0e7e.jpg" alt="" width="395" height="263" class="alignleft wp-image-2264" /></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/33ff6ae18b8d55ed51fc2ac86d9ba70b.jpg" alt="" width="395" height="263" class="alignright wp-image-2265" /></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/R61_7044.jpg" alt="" width="400" height="267" class="aligncenter wp-image-2266" /></p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>å¥³æ€§å°‚é–€åŒ»ã�«ã‚ˆã‚‹èƒƒã‚«ãƒ¡ãƒ©ãƒ»å¤§è…¸ã‚«ãƒ¡ãƒ©</h3>															<div class="top_feature_text">
+									<p><strong>å›½å†…æœ€é«˜å³°ã�®æ…ˆæ�µåŒ»å¤§å†…è¦–é�¡ã‚»ãƒ³ã‚¿ãƒ¼</strong>ã�§ç ”é‘½ã‚’ç©�ã‚“ã� çµŒé¨“è±Šå¯Œã�ªå¸¸å‹¤å¥³æ€§åŒ»å¸«ã�Œã€�è‹¦ç—›ã‚’æœ€å°�é™�ã�«æŠ‘ã�ˆã�Ÿèƒƒã‚«ãƒ¡ãƒ©ã€�å¤§è…¸ã‚«ãƒ¡ãƒ©ã‚’æ‹…å½“ã�—ã�¾ã�™ã€‚<span style="background-color: #ccffff;"><strong>é�®é�™å‰¤ã‚’ä½¿ç”¨ã�—ã�Ÿèƒƒã‚«ãƒ¡ãƒ©å¤§è…¸ã‚«ãƒ¡ãƒ©å�Œæ™‚æ¤œæŸ»</strong></span>ã€�<span style="background-color: #ccffff;"><strong>æ—¥å¸°ã‚Šå¤§è…¸ãƒ�ãƒªãƒ¼ãƒ—åˆ‡é™¤</strong></span>ã‚‚å�¯èƒ½ã�§ã�™ã€‚æ¤œæŸ»å¾Œã�¯ã‚¹ãƒˆãƒ¬ãƒƒãƒ�ãƒ£ãƒ¼ã�®ã�¾ã�¾ãƒªã‚«ãƒ�ãƒªãƒ¼å®¤ã�¸ç§»å‹•ã�—é�®é�™ã�Œè¦šã‚�ã‚‹ã�¾ã�§ã‚†ã�£ã��ã‚Šã�Šå¯›ã��ã�„ã�Ÿã� ã�‘ã�¾ã�™ã€‚<br />
+æ›³èˆŸã�§éš�ä¸€ã�®é«˜ç²¾ç´°é«˜ç”»è³ªã�ªå†…è¦–é�¡ã‚’å‚™ã�ˆã€�ã�•ã‚‰ã�«ã‚¨ã‚­ã‚¹ãƒ‘ãƒ¼ãƒˆç—…ç�†åŒ»ã�¨é€£æ�ºã‚’è¡Œã�†ã�“ã�¨ã�§ã€�ã‚ˆã‚Šç²¾åº¦ã�®é«˜ã�„è¨ºæ–­ã‚’å�¯èƒ½ã�¨ã�—ã�¦ã�„ã�¾ã�™ã€‚è©³ã�—ã��ã�¯HPå†…ã�®å†…è¦–é�¡æ¤œæŸ»ã‚’ã�”ç¢ºèª�ã��ã� ã�•ã�„ã€‚</p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/de57c209f735fb49fa115eb2860c6d7e.jpeg" alt="" width="395" height="263" class="alignleft wp-image-2268" /><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/8679ECC8-D0A6-4C8F-9C49-0E3208D46CB3.jpeg" alt="" width="395" height="263" class="alignright wp-image-2269" /></p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>é ­ç—›å°‚é–€å¤–æ�¥ã€œé ­ç—›ã�‹ã‚‰ã�®è§£æ”¾ã‚’ã€œ</h3>															<div class="top_feature_text">
+									<p><strong><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2025/10/9ff98b50230ed9c59969f8f8c0b53070-e1760687988653-300x197.jpg" alt="" width="343" height="225" class=" wp-image-3195 alignleft" srcset="https://maluclinic.com/wp/wp-content/uploads/2025/10/9ff98b50230ed9c59969f8f8c0b53070-e1760687988653-300x197.jpg 300w, https://maluclinic.com/wp/wp-content/uploads/2025/10/9ff98b50230ed9c59969f8f8c0b53070-e1760687988653-1024x672.jpg 1024w, https://maluclinic.com/wp/wp-content/uploads/2025/10/9ff98b50230ed9c59969f8f8c0b53070-e1760687988653-768x504.jpg 768w, https://maluclinic.com/wp/wp-content/uploads/2025/10/9ff98b50230ed9c59969f8f8c0b53070-e1760687988653-1536x1008.jpg 1536w, https://maluclinic.com/wp/wp-content/uploads/2025/10/9ff98b50230ed9c59969f8f8c0b53070-e1760687988653.jpg 1844w" sizes="(max-width: 343px) 100vw, 343px" /><span style="font-size: 20px;">ã�¤ã‚‰ã�„é ­ç—›ã�§ã�Šæ‚©ã�¿ã�®æ–¹ã�¸ã€‚</span></strong><br />
+é ­ç—›ã�®ã‚¹ãƒšã‚·ãƒ£ãƒªã‚¹ãƒˆã€�è„³å¤–ç§‘å°‚é–€åŒ»ã�Œç‰‡é ­ç—›ãƒ»ç·Šå¼µå�‹é ­ç—›ãƒ»ç¾¤ç™ºé ­ç—›ã�ªã�©å¹…åºƒã�„é ­ç—›ã‚’è¨ºç™‚ã�—ã�¾ã�™ã€‚é�©å®œCTã‚„MRIæ¤œæŸ»ã‚’ç”¨ã�„ã�¦ç·Šæ€¥æ€§ã�®é«˜ã�„2æ¬¡æ€§é ­ç—›ã‚‚è¿…é€Ÿã�«è¨ºæ–­å¯¾å¿œã€‚ä¸€äººã�²ã�¨ã‚Šã�«å�ˆã�£ã�Ÿæ€¥æ€§æœŸã�‹ã‚‰äºˆé˜²æ²»ç™‚ã�¾ã�§æ��æ¡ˆã�„ã�Ÿã�—ã�¾ã�™ã€‚</p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>ã�„ã�¤ã�§ã‚‚ç›¸è«‡ã�§ã��ã‚‹èº«è¿‘ã�ªã‚¯ãƒªãƒ‹ãƒƒã‚¯</h3>															<div class="top_feature_text">
+									<p><span style="font-size: 16px;"><strong>ã�‹ã�‹ã‚Šã�¤ã�‘åŒ»ã�Œã�„ã�ªã��ã�¦å›°ã�£ã�¦ã�„ã�¾ã�›ã‚“ã�‹ï¼Ÿ</strong></span><br />
+å½“é™¢ã�¯å†…è¦–é�¡æ¤œæŸ»ã‚„å®šæœŸçš„ã�ªé€šé™¢ã� ã�‘ã�§ã�ªã��ã€�ç™ºç†±ã‚„é¢¨é‚ªã�ªã�©æ€¥ã�ªä½“èª¿ä¸�è‰¯ã�®éš›ã�«ã‚‚å®‰å¿ƒã�—ã�¦å�—è¨ºã�„ã�Ÿã� ã�‘ã�¾ã�™ã€‚ã�©ã‚“ã�ªæ™‚ã�§ã‚‚<strong>ã€Œç—…æ°—ã‚’è¨ºã�šã�—ã�¦ç—…äººã‚’è¨ºã‚ˆã€�</strong>ã�®ç²¾ç¥�ã�§ã€�æ›³èˆŸã‚¨ãƒªã‚¢ã�®çš†ã�•ã�¾ã�®<strong>ã€ŒçœŸã�®ã�‹ã�‹ã‚Šã�¤ã�‘åŒ»ã€�</strong>ã�¨ã�—ã�¦ä¸€äººä¸€äººã�«å¯„ã‚Šæ·»ã�„ã€�èº«è¿‘ã�ªãƒ›ãƒ¼ãƒ ã‚¯ãƒªãƒ‹ãƒƒã‚¯ã�¨ã�—ã�¦åŒ…æ‹¬çš„ã�ªã‚µãƒ�ãƒ¼ãƒˆã�«åŠªã‚�ã�¦ã�¾ã�„ã‚Šã�¾ã�™ã€‚</p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>è±Šå¯Œã�ªé€£æ�ºãƒ�ãƒƒãƒˆãƒ¯ãƒ¼ã‚¯</h3>															<div class="top_feature_text">
+									<p>å½“é™¢ã�¯æ�±äº¬æ…ˆæ�µä¼šåŒ»ç§‘å¤§å­¦ã�¨ã�®ã‚·ãƒ¼ãƒ ãƒ¬ã‚¹ã�ªæ��æ�ºã�«ã‚ˆã‚Šã€�ä¸‡ã�Œä¸€æ‰‹è¡“ã‚„å…ˆé€²åŒ»ç™‚ã�Œå¿…è¦�ã�ªéš›ã‚‚ä¸‡å…¨ã�ªä½“åˆ¶ã‚’æ•´ã�ˆã�¦ã�Šã‚Šã�¾ã�™ã€‚</p>
+<p>ç‰›ä¹…æ„›å’Œç·�å�ˆç—…é™¢ï¼ˆèŒ¨åŸ�çœŒï¼‰æ”¾å°„ç·šç§‘ã�¨NOBORI-EXã‚’ç”¨ã�„ã�Ÿé� éš”èª­å½±ã�§é€£æ�ºã�—ã�¦ã�„ã�¾ã�™ã€‚ï¼ˆé� éš”ç”»åƒ�è¨ºæ–­ç®¡ç�†åŠ ç®—ï¼’ã‚’ç®—å®šï¼‰</p>
+<p>ä»–ã€�æ—¥æœ¬å¤§å­¦ç—…é™¢è„³ç¥�çµŒå¤–ç§‘ï¼ˆå�ƒä»£ç”°åŒºï¼‰ã€�æ—¥æœ¬èµ¤å��å­—ç¤¾åŒ»ç™‚ã‚»ãƒ³ã‚¿ãƒ¼ï¼ˆæ¸‹è°·åŒºï¼‰ã€�ä¸‰äº•è¨˜å¿µç—…é™¢ï¼ˆå�ƒä»£ç”°åŒºï¼‰ã€�æ°¸å¯¿ç·�å�ˆç—…é™¢ï¼ˆå�°æ�±åŒºï¼‰ã€�æ�±äº¬æ›³èˆŸç—…é™¢ï¼ˆå¢¨ç”°åŒºï¼‰ã€�æ¸ˆç”Ÿä¼šå�‘å³¶ç—…é™¢ï¼ˆå¢¨ç”°åŒºï¼‰ã€�éƒ½ç«‹å¢¨æ�±ç—…é™¢ï¼ˆå¢¨ç”°åŒºï¼‰ã€�å±±ç”°è¨˜å¿µç—…é™¢ï¼ˆå¢¨ç”°åŒºï¼‰ã€�æ�±äº¬é€“ä¿¡ç—…é™¢ï¼ˆå�ƒä»£ç”°åŒºï¼‰ã€�æ—¥æœ¬åŒ»ç§‘å¤§å­¦è„³ç¥�çµŒå¤–ç§‘ï¼ˆæ–‡äº¬åŒºï¼‰ã�ªã�©å¤šã��ã�®ç—…é™¢ã�¨ç—…è¨ºé€£æ�ºã‚’ç· çµ�ã�—ã�¦ã�„ã�¾ã�™ã€‚</p>
+<p><strong><span style="color: #3366ff; background-color: #ccffff;">ä¸‡ã�Œä¸€ã�®éš›ã€�ã�©ã�“ã�®ç—…é™¢ã�«è¡Œã�£ã�Ÿã‚‰ã�„ã�„ã�‹åˆ†ã�‹ã‚‰ã�ªã�„ã€‚ã��ã�®ã‚ˆã�†ã�ªå ´å�ˆã‚‚ã�”ç›¸è«‡ã�®ä¸Šã€�é�©åˆ‡ã�ªç—…é™¢ã�¸ç´¹ä»‹ã�™ã‚‹ã�“ã�¨ã�Œå�¯èƒ½ã�§ã�™ã€‚</span></strong></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/10/d4e284c9340f742aba48eba92824d1ec.png" alt="" width="372" height="255" class="alignleft wp-image-2437" /></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/8c32835e914030f83f5c49af0458b5cb.jpg" alt="" width="412" height="255" class="alignright wp-image-2286" srcset="https://maluclinic.com/wp/wp-content/uploads/2024/09/8c32835e914030f83f5c49af0458b5cb.jpg 360w, https://maluclinic.com/wp/wp-content/uploads/2024/09/8c32835e914030f83f5c49af0458b5cb-300x186.jpg 300w" sizes="(max-width: 412px) 100vw, 412px" /></p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>ä¹³å…�ã�®ã�‚ã�Ÿã�¾ã�®ã�‹ã�Ÿã�¡å¤–æ�¥</h3>															<div class="top_feature_text">
+									<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/06/image11.png" alt="" width="380" height="290" class="alignleft wp-image-2049" srcset="https://maluclinic.com/wp/wp-content/uploads/2024/06/image11.png 316w, https://maluclinic.com/wp/wp-content/uploads/2024/06/image11-300x229.png 300w" sizes="(max-width: 380px) 100vw, 380px" />å½“é™¢ã�§ã�¯ã€�éƒ½å†…ã�§ã‚‚ã�¾ã� æ•°å°‘ã�ªã�„Â <strong><span style="color: #0000ff; background-color: #ccffff;"><a href="https://maluclinic.com/menu/%e4%b9%b3%e5%85%90%e3%81%ae%e3%81%82%e3%81%9f%e3%81%be%e3%81%ae%e5%bd%a2%e5%a4%96%e6%9d%a5/" style="color: #0000ff; background-color: #ccffff;">ä¹³å…�ã�®é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥</a></span></strong>ã‚’é–‹è¨­ã�—ã�¦ã�„ã�¾ã�™ã€‚ï¼ˆç¬¬1,3,5é€±åœŸæ›œå�ˆå‰�,æ¯�é€±ç�«ãƒ»æ°´æ›œå�ˆå¾Œã�®ã�¿ã�®å®Œå…¨äºˆç´„åˆ¶ï¼‰<br />
+ã�Šå­�æ§˜ã�®é ­ã�®æ­ªã�¿ã�Œæ°—ã�«ã�ªã‚‹æ–¹ãƒ»ãƒ˜ãƒ«ãƒ¡ãƒƒãƒˆæ²»ç™‚ã‚’ã�”æ¤œè¨�ä¸­ã�®æ–¹ã�¯ã€�ã�©ã�†ã��ã�Šæ°—è»½ã�«ã�”ç›¸è«‡ã��ã� ã�•ã�„ã€‚<br />
+<span style="text-decoration: underline;">è©³ã�—ã��ã�¯HPå†…ã�®è¨ºç™‚å†…å®¹ã�‹ã‚‰</span>ã�”ç¢ºèª�ã��ã� ã�•ã�„ã€‚</p>
+<p><a href="https://maluclinic.com/wp/wp-content/uploads/2025/03/cf96a6014a53cbca6db656b6cc533885.pdf"><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2025/03/83a6d27ce0b4ffc529d1c4dd040821f5-300x120.png" alt="" width="340" height="136" class="alignnone wp-image-2862" srcset="https://maluclinic.com/wp/wp-content/uploads/2025/03/83a6d27ce0b4ffc529d1c4dd040821f5-300x120.png 300w, https://maluclinic.com/wp/wp-content/uploads/2025/03/83a6d27ce0b4ffc529d1c4dd040821f5.png 500w" sizes="(max-width: 340px) 100vw, 340px" /></a></p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>æ›³èˆŸã‚¨ãƒªã‚¢æœ€å¤§è¦�æ¨¡ã�®åºƒã€…ã�¨ã�—ã�Ÿç©ºé–“</h3>															<div class="top_feature_text">
+									<ul class="list03">
+<li>é™¢å†…ã�¯ã‚†ã�¨ã‚Šã�‚ã‚‹<span style="color: #3366ff;"><strong data-start="137" data-end="155">é–‹æ”¾æ„Ÿã�®ã�‚ã‚‹ãƒ�ãƒªã‚¢ãƒ•ãƒªãƒ¼ç©ºé–“</strong></span>ã�¨ã�ªã�£ã�¦ã�Šã‚Šã€�è»Šæ¤…å­�ã‚„ãƒ™ãƒ“ãƒ¼ã‚«ãƒ¼ã�§ã‚‚ã‚¹ãƒˆãƒ¬ã‚¹ã�ªã��å�—è¨ºå�¯èƒ½</li>
+<li>è„³å¤–ç§‘è¨ºå¯Ÿå®¤ã�¯<strong>é ­ç—›</strong>ã�«å„ªã�—ã�„<strong><span style="color: #008000;">ã‚°ãƒªãƒ¼ãƒ³</span></strong>ã‚’åŸºèª¿ã�¨ã�—ã�Ÿå†…è£…ã‚„èª¿å…‰å�¯èƒ½ã�ªç…§æ˜�ã‚’æ�¡ç”¨</li>
+<li><span style="color: #000000;"><strong>å†…è¦–é�¡ã‚¨ãƒªã‚¢ã�¯</strong></span>åºƒã€…ã�‹ã�¤<strong><span style="color: #3366ff;">ãƒ—ãƒ©ã‚¤ãƒ�ã‚·ãƒ¼ã�«é…�æ…®ã�—ã�Ÿè¨­å‚™å‹•ç·š</span></strong><span style="color: #000000;">ã�§å¿«é�©ã�ªæ¤œæŸ»ã‚’å®Ÿç�¾</span></li>
+<li>é™¢å†…ã�®ç©ºæ°—ã‚’æ¸…æ½”ã�«ä¿�ã�¦ã‚‹ã‚ˆã�†ã€�é«˜æ€§èƒ½ã�ªç©ºæ°—æ¸…æµ„æ©Ÿã‚’å°�å…¥</li>
+<li>ã�•ã‚‰ã�«<span style="color: #3366ff;"><strong>ç™ºç†±å¤–æ�¥å°‚ç”¨ãƒ–ãƒ¼ã‚¹ï¼ˆå¤šç›®çš„å®¤ï¼‰</strong><span style="color: #000000;">ã�Œã�‚ã‚‹ã�Ÿã‚�</span></span>ã€�æ„ŸæŸ“å¯¾ç­–ã‚‚ä¸‡å…¨ã�§ã�™ã€‚</li>
+</ul>
+<p style="margin-bottom: 0;"><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/c362143f9db090cdd117a1b068e426e8.jpg" alt="" width="395" height="263" class="alignleft wp-image-2272" /></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/d308924984b0b0c7fe4e9e6450b3ce09-scaled-e1730186296896.jpg" alt="" width="395" height="487" class="alignright wp-image-2273" /></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/86b03943b8e1edfbcd297143ed21a61a.jpg" alt="" width="395" height="263" class="alignleft wp-image-2274" /></p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>å¾’æ­©1åˆ†,1éš�ãƒ†ãƒŠãƒ³ãƒˆã�§ã‚¢ã‚¯ã‚»ã‚¹æŠœç¾¤</h3>															<div class="top_feature_text">
+									<ul class="list03">
+<li>äº¬æˆ�ç·šåˆ©ç”¨ã�®å ´å�ˆã€�<strong>äº¬æˆ�æ›³èˆŸé§…</strong>æ˜�æ²»é€šã‚Šæ²¿ã�„å‡ºå�£ã‚ˆã‚Šç´„30mã€�<span style="color: #000000; font-size: 16px; background-color: #ccffff;"><strong>å¾’æ­©ï¼‘åˆ†</strong></span>ã�§å¤©å€™ã�Œæ‚ªã��ã�¦ã‚‚é€šã�„ã‚„ã�™ã�„ç«‹åœ°ã�§ã�™ã€‚</li>
+<li>æ�±æ­¦æ›³èˆŸé§…ã‚ˆã‚Š<strong><span style="background-color: #ccffff;">å¾’æ­©7åˆ†</span></strong>ã€‚</li>
+<li>æ�±å�‘å³¶ã‚„å…«åºƒã‚¨ãƒªã‚¢ã�‹ã‚‰ã‚‚å¥½ã‚¢ã‚¯ã‚»ã‚¹ã�§ã�™ã€‚</li>
+<li>æŠ¼ä¸Šé§…ã�‹ã‚‰ï¼‘é§…ï¼ˆ<span style="background-color: #ccffff;"><strong>ï¼’åˆ†</strong></span>ï¼‰ã€�é�’ç ¥é§…ã�‹ã‚‰ï¼”é§…ï¼ˆ<span style="background-color: #ccffff;"><strong>ï¼—åˆ†</strong></span>ï¼‰ã�¨ã‚¢ã‚¯ã‚»ã‚¹è‰¯å¥½ã�§ã�™ã€‚</li>
+<li>å°‚ç”¨é§�è¼ªå ´ï¼ˆãƒˆãƒ¢ã‚ºã�•ã‚“ã€�ã��ã‚‰ã�®æœ¨çš®è†šç§‘ã�•ã‚“ã�¨å…±ç”¨ï¼‰ã�Œ<span style="background-color: #ccffff;"><strong>22å�°</strong></span>ã�‚ã‚Šè‡ªè»¢è»Šé€šé™¢ã‚‚å�¯èƒ½ã�§ã�™ã€‚</li>
+<li>å°‚ç”¨é§�è»Šå ´ã�¯ã�‚ã‚Šã�¾ã�›ã‚“ã�Œã€�ã�™ã��éš£ã�«åºƒã�„ã‚³ã‚¤ãƒ³ãƒ‘ãƒ¼ã‚­ãƒ³ã‚°(NTTãƒ«ãƒ»ãƒ‘ãƒ«ã‚¯)ã�Œã�‚ã‚Šã�¾ã�™ã€‚å¥¥ã‚‚å�œã‚�ã‚‰ã‚Œã�¾ã�™ï¼ˆ<span style="background-color: #ccffff;">30åˆ†200å††</span>ï¼‰</li>
+</ul>
+<p style="margin-bottom: 0;"><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/R61_6908.jpg" alt="" width="395" height="263" class="alignleft wp-image-2275" /></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/09/R61_6943.jpg" alt="" width="395" height="263" class="alignright wp-image-2276" /></p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/10/IMG_0215.jpeg" alt="" width="400" height="300" class="aligncenter wp-image-2398" /></p>
+																			<div class="btn01">
+											<a href="https://maluclinic.com/access/">äº¬æˆ�æ›³èˆŸé§…ã�‹ã‚‰ã�®å¾’æ­©ãƒ«ãƒ¼ãƒˆå‹•ç”»ã�¯ã�“ã�¡ã‚‰</a>
+										</div>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>ã‚¹ãƒ ãƒ¼ã‚ºã�ªå�—è¨ºã�Œå�¯èƒ½</h3>															<div class="top_feature_text">
+									<p>å½“é™¢ã�¯åŒ»ç™‚DXã�«å¯¾å¿œã�—ã�¦ã�Šã‚Šã€�<strong>äº‹å‰�WEBäºˆç´„ã€�WEBå•�è¨ºã€�ãƒ‡ã‚¸ã‚¹ãƒ�ä¼šè¨ˆã‚„å�„ç¨®ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚«ãƒ¼ãƒ‰å¯¾å¿œã�®è‡ªå‹•ç²¾ç®—æ©Ÿã‚’å°�å…¥</strong>ã�—ã�¦ã�„ã�¾ã�™ã€‚</p>
+<p>ã�“ã‚Œã‚‰ã‚’ã�”æ´»ç”¨ã�„ã�Ÿã� ã��ã�“ã�¨ã�§è¨ºå¯Ÿå‰�â†’è¨ºå¯Ÿâ†’è¨ºå¯Ÿå¾Œã�¾ã�§ã‚¹ãƒ ãƒ¼ã‚ºã�ªå�—è¨ºã�Œå�¯èƒ½ã�§ã�™ã€‚</p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				<div class="feature_contents_box">
+			<div class="top_feature_item">
+				<div class="top_feature_item_inner text_w100">
+											<div class="top_feature_box">
+							<h3>English-speaking Doctors</h3>															<div class="top_feature_text">
+									<p><em><strong>English-Speaking Doctors Available</strong></em><br />
+We offer full medical services in English for your peace of mind.<br />
+<em><strong>Visitors Welcome</strong></em><br />
+Travelers and tourists are welcome â€” no Japanese health insurance required.<br />
+<em><strong>Our Services Include</strong></em><br />
+Fever, cough, diarrhea, headache, abdominal pain, gastrointestinal endoscopy,<br />
+influenza and COVID-19 testing, head injuries, wound care, and more.<br />
+<em><strong>Medical Certificates in English</strong></em><br />
+We can issue English-language medical certificates upon request. (Fee:Â¥12,000)</p>
+																	</div><!-- .top_feature_text -->
+													</div><!-- .top_feature_box -->
+					</div><!-- .top_feature_item_inner -->
+			</div><!-- .top_feature_item -->
+		</div>
+				</div><!-- .box -->
+	</section>
+<!--============================== â–²å½“é™¢ã�®ç‰¹å¾´ ==============================-->
+
+
+
+<!--============================== â–¼ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ä¸‹ ==============================-->
+<section class="sec_freearea_under" id="sec_freearea_under_01">
+	<div class="freearea_under">
+								<div class="text"><p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2025/10/ac02717180ead50d85ce866f88c585e8-300x212.jpg" alt="" width="808" height="571" class="alignnone  wp-image-3205" srcset="https://maluclinic.com/wp/wp-content/uploads/2025/10/ac02717180ead50d85ce866f88c585e8-300x212.jpg 300w, https://maluclinic.com/wp/wp-content/uploads/2025/10/ac02717180ead50d85ce866f88c585e8-1024x724.jpg 1024w, https://maluclinic.com/wp/wp-content/uploads/2025/10/ac02717180ead50d85ce866f88c585e8-768x543.jpg 768w, https://maluclinic.com/wp/wp-content/uploads/2025/10/ac02717180ead50d85ce866f88c585e8-1536x1086.jpg 1536w, https://maluclinic.com/wp/wp-content/uploads/2025/10/ac02717180ead50d85ce866f88c585e8-2048x1448.jpg 2048w" sizes="(max-width: 808px) 100vw, 808px" /></p>
+</div>
+			</div><!-- .freearea_under -->
+</section>
+	<!--============================== â–²ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ä¸‹ ==============================-->
+
+
+
+<!--============================== â–¼è¨ºç™‚çŠ¶æ³�è¡¨ç¤º ==============================-->
+<!--============================== â–²è¨ºç™‚çŠ¶æ³�è¡¨ç¤º ==============================-->
+</main>
+<!--============================== â–¼ã‚µã‚¤ãƒ‰ãƒ�ãƒ¼ ==============================-->
+<div class="side_area">
+<!-- â–¼SNSãƒœã‚¿ãƒ³ -->
+		<ul class="side_sns">
+			<li><a href="https://lin.ee/cG0sMJM" target="_blank"><i class="fab fa-line"></i>LINE</a></li>		</ul>
+	<!-- â–²SNSãƒœã‚¿ãƒ³ -->
+
+
+
+<!-- â–¼ãƒ�ãƒŠãƒ¼ã‚¨ãƒªã‚¢ -->
+<!-- â–²ãƒ�ãƒŠãƒ¼ã‚¨ãƒªã‚¢ -->
+
+
+
+<!-- â–¼ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ -->
+			<div class="side_box" id="op_sidefreearea_top01">
+	<div class="op_sidefreearea">
+	<p class="side_title">æ�¥é™¢ã�™ã‚‹æ‚£è€…ã�•ã‚“ã�¸</p>		<p class="title_style02"><span style="font-size: 20px;"><strong>å�—è¨ºæ–¹æ³•ã�«ã�¤ã�„ã�¦</strong></span></p>
+<p><strong>WEBã€�é›»è©±ã�«ã�¦ã�”äºˆç´„å�¯èƒ½ã�§ã�™</strong></p>
+<p><span style="background-color: #ffffff; font-size: 16px; color: #000000;"><strong><span style="background-color: #ffffff;">å½“é™¢ã�¯äºˆç´„ã�ªã�—ã�§ã‚‚å�—è¨ºå�¯èƒ½ã�§ã�™ã�Œã€�</span></strong></span><span style="background-color: #ffffff; font-size: 16px; color: #3366ff;"><strong><span style="background-color: #ffffff;"><span style="color: #ff0000;">äº‹å‰�äºˆç´„ã�®æ–¹ã�Œ</span></span></strong></span><span style="background-color: #ffffff; font-size: 16px; color: #3366ff;"><strong><span style="background-color: #ffffff;"><span style="color: #ff0000;">å„ªå…ˆ<span style="color: #000000;">ã�§ã�™</span></span><span style="color: #000000;">ã€‚</span></span></strong></span></p>
+<p><span style="background-color: #ffffff; font-size: 16px; color: #3366ff;"><strong><span style="background-color: #ffffff;"><span><span style="color: #000000;">30åˆ†ã�®äºˆç´„æ� å†…ã�«è¤‡æ•°ã�®æ‚£è€…æ§˜ã�Œäºˆç´„ã�•ã‚Œã�¦ã�„ã�¾ã�™ã€‚</span><span style="color: #ff0000;">å¤šå°‘ã�®å¾…ã�¡æ™‚é–“ã�¯å¿…ã�šç™ºç”Ÿã�™ã‚‹</span><span style="color: #000000;">ã�“ã�¨ã‚’ã�”æ‰¿çŸ¥ã�Šã��ã��ã� ã�•ã�„ã€‚</span></span></span></strong></span></p>
+<p><strong>â€»ç·Šæ€¥ã�ªã�©ã�«ã‚ˆã‚Šé †ç•ªã�Œå¤‰æ›´ã�™ã‚‹ã�“ã�¨ã�Œã�‚ã‚Šã�¾ã�™ã€‚</strong></p>
+<p><span style="font-size: 16px;">ãƒ»å�—è¨ºå¸Œæœ›ã�®æ–¹ã�¯<strong><span style="color: #ff0000;">WEBäºˆç´„</span></strong>ã�Œä¾¿åˆ©ã�§ã�™ã€‚<strong>24æ™‚é–“äºˆç´„å�¯èƒ½</strong>ã�§ã�™ã€‚</span></p>
+<p><span style="font-size: 16px;">â€»åˆ�å›�ç™»éŒ²ã�¯å°‘ã�—ã�Šæ‰‹é–“ã‚’ã�Šã�‹ã�‘ã�—ã�¾ã�™ã�Œã€�ä¸€åº¦ç™»éŒ²ã�™ã‚‹ã�¨è¨ºå¯Ÿã�‹ã‚‰å¸°å®…ã�¾ã�§ç°¡æ½”ã�«ã�ªã‚Šã�¾ã�™ã€‚</span></p>
+<p>ã�•ã‚‰ã�«äº‹å‰�ã�«<strong>WEBå•�è¨º</strong>ã‚’ã�”å…¥åŠ›ã�„ã�Ÿã� ã�‘ã�¾ã�™ã�¨ã‚ˆã‚Šè¨ºå¯Ÿã�Œã‚¹ãƒ ãƒ¼ã‚ºã�«ã�ªã‚Šã�¾ã�™ã€‚<span style="text-decoration: underline;"><strong></strong></span></p>
+<p><span style="font-size: 16px;"><strong>ãƒ»ã�Šé›»è©±ã�§ã�®ã�”äºˆç´„ã‚‚å�—ã�‘ä»˜ã�‘ã�¦ã�„ã�¾ã�™ã€‚</strong>ã�Šå•�ã�„å�ˆã‚�ã�›ã�¯<span style="text-decoration: underline;">å¹³æ—¥8:50ã�‹ã‚‰17:45ã�®é–“ï¼ˆåœŸæ›œã�¯8:50ã�‹ã‚‰12:45ï¼‰</span>ã�§å�¯èƒ½ã�§ã�™ã€‚</span></p>
+<p><strong>â€»é–‰é™¢15åˆ†å‰�ã�¾ã�§ã�«ã�¯ã�”æ�¥é™¢ã��ã� ã�•ã�„ã€‚</strong></p>
+<p><strong>â€»ã�”äºˆç´„ã�®æ™‚é–“ã�«è¨ºå¯Ÿã�§ã��ã‚‹ã‚ˆã�†å¿ƒã�Œã�‘ã�¦ã�„ã�¾ã�™ã�Œã€�å½“é™¢ã�¯<span style="text-decoration: underline;">å®Œå…¨äºˆç´„åˆ¶ã�§ã�¯ã�ªã�„</span>ã�Ÿã‚�ã€�æ—¥ã�«ã‚ˆã�£ã�¦ï¼ˆã�¨ã��ã�«åœŸæ›œæ—¥ï¼‰ã�¯æ··é›‘ã�—äºˆå®šæ™‚é–“ã�‹ã‚‰30-60åˆ†ç¨‹ã�Šå¾…ã�¡ã�„ã�Ÿã� ã��ã�“ã�¨ã�Œã�‚ã‚Šã�¾ã�™ã€‚å¤§å¤‰æ��ç¸®ã�§ã�™ã�Œã€�</strong><strong>æ™‚é–“ã�«ä½™è£•ã‚’æŒ�ã�Ÿã�›ã�¦å�—è¨ºã�„ã�Ÿã� ã�‘ã�¾ã�™ã�¨å¹¸ã�„ã�§ã�™ã€‚å¹³æ—¥ã�®å¤•æ–¹ã�¯æ¯”è¼ƒçš„ã‚¹ãƒ ãƒ¼ã‚ºã�«ã�”æ¡ˆå†…å�¯èƒ½ã�§ã�™ã€‚</strong></p>
+<p>â€»æ¶ˆåŒ–å™¨å†…ç§‘å�—è¨ºå¸Œæœ›ã�®æ‚£è€…æ§˜ã�¸ã€€ç·Šæ€¥å†…è¦–é�¡æ¤œæŸ»ã�§å‰¯é™¢é•·ã�Œå¯¾å¿œå›°é›£ã�®å ´å�ˆã‚„16ï¼š00ä»¥é™�ã�®å ´å�ˆã€�é™¢é•·ã�Œä»£è¨ºã�„ã�Ÿã�—ã�¾ã�™ã€‚ã�‚ã‚‰ã�‹ã�˜ã‚�ã�”äº†æ‰¿ã��ã� ã�•ã�„ã€‚16:00ä»¥é™�ã�®å ´å�ˆã€�WEBäºˆç´„ã�¯ã€Œå†…ç§‘ä¸€èˆ¬ã€�ã�‹ã‚‰ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚</p>
+<p class="title_style02"><span style="font-size: 20px;"><strong>ç™ºç†±å¤–æ�¥ã�«ã�¤ã�„ã�¦</strong></span></p>
+<p><strong>ç™ºç†±å¤–æ�¥<span style="font-size: 16px;">ï¼ˆ37.5â„ƒä»¥ä¸Šï¼‰</span></strong><span style="font-size: 16px;">ã�¯</span><strong><span style="color: #ff0000;">WEBäºˆç´„</span></strong><span style="color: #000000;">ã�‹ã‚‰ã�”äºˆç´„</span><span style="color: #ff0000;"><span style="color: #000000;">ã��ã� ã�•ã�„</span></span><strong><span style="color: #ff0000;"><span style="color: #000000;">ã€‚</span></span></strong></p>
+<p><strong>WEBäºˆç´„ã�ªã�—</strong>ã�§å�—è¨ºã�”å¸Œæœ›ã�®å ´å�ˆã�¯ã€�<span style="text-decoration: underline;">äº‹å‰�ã�«ã�Šé›»è©±ã�§å•�ã�„å�ˆã‚�ã�›ã��ã� ã�•ã�„ã€‚</span>ã�”é€£çµ¡ã‚’é ‚ã�‹ã�ªã�„å ´å�ˆã€�å�—è¨ºã‚’ã�Šæ–­ã‚Šã�•ã�›ã�¦ã�„ã�Ÿã� ã��ã�“ã�¨ã�Œã�‚ã‚Šã�¾ã�™ã�®ã�§ã€�äºˆã‚�ã�”äº†æ‰¿ã��ã� ã�•ã�„ã€‚</p>
+<p>ã�¾ã�Ÿç™ºç†±å¤–æ�¥ã�®æ±ºæ¸ˆã�¯ã€�<span style="color: #000000;"><span style="text-decoration: underline;">æ„ŸæŸ“äºˆé˜²ã�®è¦³ç‚¹</span>ã�‹ã‚‰</span><strong>ã€Œãƒ‡ã‚¸ã‚¹ãƒ�æ±ºæ¸ˆâ€»ã€�</strong>ã‚’æ�¨å¥¨ã�—ã�¾ã�™ã€‚â€»äºˆã‚�ã‚¢ãƒ—ãƒªã�«ç™»éŒ²ã�—ã�Ÿã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚«ãƒ¼ãƒ‰ï¼ˆVISA,Master,JCBï¼‰ã�§è‡ªå‹•æ±ºæ¸ˆã�™ã‚‹ã‚·ã‚¹ãƒ†ãƒ ã�§ã�™ã€‚</p>
+<p>ã‚‚ã�¡ã‚�ã‚“ã€�ãƒ‡ã‚¸ã‚¹ãƒ�æ±ºæ¸ˆã� ã�‘ã�§ã�ªã��ã€�å½“æ—¥ã�®ã�Šæ”¯æ‰•ã�„ã‚‚å�¯èƒ½ã�§ã�™ã€‚</p>
+<p class="title_style02"><span style="font-size: 20px;"><strong>æ„ŸæŸ“ç—‡å¯¾ç­–ã�«ã�¤ã�„ã�¦</strong></span><!--more--></p>
+<p><strong><span style="color: #ff0000; font-size: 16px;">ãƒ»å½“é�¢ã�®é–“ã€�æ„ŸæŸ“äºˆé˜²å¯¾ç­–ã�®ã�Ÿã‚�ã�”æ�¥é™¢ã�®éš›ã�¯ãƒ�ã‚¹ã‚¯ç�€ç”¨ã‚’ã�Šé¡˜ã�„ã�—ã�¾ã�™ã€‚<span>ã�ªã�Šã€�ãƒ�ã‚¹ã‚¯ã‚’ã�ŠæŒ�ã�¡ã�§ã�ªã�„æ–¹ã�¯</span></span></strong><strong><span style="color: #ff0000; font-size: 16px;"><span>è²©å£²ã�—ã�¦ã�Šã‚Šã�¾ã�™ã€‚ã�”ç�†è§£ã�”å�”åŠ›ã�®ã�»ã�©å®œã�—ã��ã�Šé¡˜ã�„ç”³ã�—ä¸Šã�’ã�¾ã�™ã€‚</span></span></strong></p>
+<p class="title_style02"><span style="font-size: 20px;"><strong>ã‚­ãƒ£ãƒƒã‚·ãƒ¥ãƒ¬ã‚¹æ±ºæ¸ˆã�«ã�¤ã�„ã�¦</strong></span></p>
+<p>å½“é™¢ã�§ã�¯é™¢å†…ã‚»ãƒŸã‚»ãƒ«ãƒ•ãƒ¬ã‚¸ã�«ã�¦ç�¾é‡‘ã�®ã�»ã�‹ä»¥ä¸‹ã�®ã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚«ãƒ¼ãƒ‰/é›»å­�ãƒ�ãƒ�ãƒ¼ã�§ã�®ã�Šæ”¯æ‰•ã�„ã�Œå�¯èƒ½ã�§ã�™ã€‚</p>
+<p>&nbsp;</p>
+<p><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/10/795316b92fc766b0181f6fef074f03fa-1-300x178.png" alt="ä½¿ç”¨å�¯èƒ½ã�ªã‚¯ãƒ¬ã‚¸ãƒƒãƒˆã‚«ãƒ¼ãƒ‰ä¸€è¦§ VISAãƒ»Mastercardãƒ»JCBãƒ»AMERICANEXPRESSãƒ»Diners Clubãƒ»QUICPay" width="300" height="178" class="aligncenter wp-image-2585 size-medium" srcset="https://maluclinic.com/wp/wp-content/uploads/2024/10/795316b92fc766b0181f6fef074f03fa-1-300x178.png 300w, https://maluclinic.com/wp/wp-content/uploads/2024/10/795316b92fc766b0181f6fef074f03fa-1.png 663w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p class="title_style02"><span style="font-size: 20px;"><strong>åˆ�è¨ºã�®æ–¹ã�¸</strong></span></p>
+<p><span style="font-size: 16px;">åˆ�è¨ºã�®éš›ã�¯ä¿�é™ºè¨¼ãƒ»åŒ»ç™‚è¨¼ç­‰ã‚’å¿…ã�šã�ŠæŒ�ã�¡ã��ã� ã�•ã�„ã€‚ä¿�é™ºè¨¼ã�®ç¢ºèª�ã�Œå�–ã‚Œã�ªã�„å ´å�ˆã�¯ä¿�é™ºè¨ºç™‚ã�¨ã�—ã�¦å�–ã‚Šæ‰±ã�†ã�“ã�¨ã�Œã�§ã��ã�¾ã�›ã‚“ã€‚</span><br />
+<span style="font-size: 16px;">â€»ä¿�é™ºè¨¼ã�®æœŸé™�åˆ‡ã‚Œã�«ã�”æ³¨æ„�ã��ã� ã�•ã�„ã€‚</span></p>
+<p>&nbsp;</p>
+<p class="title_style02"><span style="font-size: 20px;"><strong>ãƒ—ãƒ©ã‚¤ãƒ�ã‚·ãƒ¼ãƒ�ãƒªã‚·ãƒ¼</strong></span></p>
+<p data-start="55" data-end="153">å½“é™¢ã�§ã�¯ã€�çš†æ§˜ã�®å€‹äººæƒ…å ±ã‚’ã€�è¨ºç™‚ãƒ»çœ‹è­·ã�Šã‚ˆã�³åŒ»ç™‚æ��ä¾›ã�®ç›®çš„ã�®ç¯„å›²å†…ã�§ã�®ã�¿å��é›†ãƒ»åˆ©ç”¨ã�„ã�Ÿã�—ã�¾ã�™ã€‚ã��ã�®ä»–ã�®ç›®çš„ã�§åˆ©ç”¨ã�™ã‚‹å ´å�ˆã�«ã�¯ã€�ã�‚ã‚‰ã�‹ã�˜ã‚�åˆ©ç”¨ç›®çš„ã‚’æ˜�ç¤ºã�—ã€�çš†æ§˜ã�®å�Œæ„�ã‚’ã�„ã�Ÿã� ã�„ã�Ÿä¸Šã�§ä½¿ç”¨ã�„ã�Ÿã�—ã�¾ã�™ã€‚</p>
+<p data-start="155" data-end="229">ã�¾ã�Ÿã€�çš†æ§˜ã�®å€‹äººæƒ…å ±ã�«ã�¤ã�„ã�¦ã�¯ã€�æƒ…å ±ã�®æ¼�æ´©ãƒ»ç´›å¤±ãƒ»ç ´å£Šãƒ»æ”¹ã�–ã‚“ãƒ»ä¸�æ­£ã‚¢ã‚¯ã‚»ã‚¹ç­‰ã‚’é˜²æ­¢ã�™ã‚‹ã�Ÿã‚�ã€�é�©åˆ‡ã�ªç®¡ç�†ã�«åŠªã‚�ã�¦ã�Šã‚Šã�¾ã�™ã€‚</p>
+<p data-start="231" data-end="311">ã�ªã�Šã€�åŒ»å¸«æ³•ã�Šã‚ˆã�³å�šç”ŸåŠ´åƒ�çœ�ã�®ã€Œã‚ªãƒ³ãƒ©ã‚¤ãƒ³è¨ºç™‚ã�®æŒ‡é‡�ã€�ã�®è¦³ç‚¹ã�‹ã‚‰ã€�<strong data-start="255" data-end="290">LINEã�®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸é€�ä¿¡ã�®ã�¿ã�§æ‚£è€…æ§˜ã�®æ¤œæŸ»çµ�æ�œã�®èª¬æ˜�ï¼ˆè¨ºæ–­ï¼‰</strong>ã�¯å½“é™¢ã�§ã�¯è¡Œã�ªã�£ã�¦ã�„ã�¾ã�›ã‚“ã€‚åŒ»ç™‚æƒ…å ±ã�¯ã€�é�©åˆ‡ã�‹ã�¤å®‰å…¨ã�«å�–ã‚Šæ‰±ã�†ã�¹ã��é‡�è¦�ã�ªæƒ…å ±ã�§ã�‚ã‚‹ã�Ÿã‚�ã�”äº†æ‰¿ã��ã� ã�•ã�„ã€‚</p>
+<p data-start="313" data-end="392">ã�¾ã�Ÿã€�å½“é™¢ã�¯æ³•å¾‹ã�«æŠµè§¦ã�™ã‚‹ã‚ˆã�†ã�ªå�£ã‚³ãƒŸä¿ƒé€²ï¼ˆã‚¢ãƒ³ã‚±ãƒ¼ãƒˆã�«ç­”ã�ˆã�¦å�£ã‚³ãƒŸèª˜å°�ã�™ã‚‹ãƒ¬ãƒ“ãƒ¥ãƒ¼ã‚²ãƒ¼ãƒ†ã‚£ãƒ³ã‚°ã�ªã�©ï¼‰ã‚’è¡Œã�†æ¥­è€…ã�¨ã�¯ä¸€åˆ‡é–¢ä¿‚ã�Œã�”ã�–ã�„ã�¾ã�›ã‚“ã€‚ã�“ã‚Œã‚‰ã�®æ¥­è€…ã�‹ã‚‰ã�®å–¶æ¥­ã‚„ã‚¢ãƒ�ã‚¤ãƒ³ãƒˆã�®ã�”ä¾�é ¼ã�¯ã€�ã�™ã�¹ã�¦ã�Šæ–­ã‚Šã�•ã�›ã�¦ã�„ã�Ÿã� ã�„ã�¦ã�Šã‚Šã�¾ã�™ã€‚</p>
+	</div>
+	</div>
+			<div class="side_box" id="op_sidefreearea_top02">
+	<div class="op_sidefreearea">
+			<p><a href="https://fdoc.jp/clinic/detail/index/id/206948/"><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/11/epark_banner_01.png" alt="" width="500" height="179" class="alignnone wp-image-2608" srcset="https://maluclinic.com/wp/wp-content/uploads/2024/11/epark_banner_01.png 700w, https://maluclinic.com/wp/wp-content/uploads/2024/11/epark_banner_01-300x107.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>&nbsp;</p>
+<p><a href="https://tokyo-doctors.com/clinicList/112851/interview/"><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2024/11/72f4b4b28c8d0f0fe54483caabef9457.jpg" alt="" width="500" height="160" class="alignnone wp-image-2610" /></a></p>
+<p>&nbsp;</p>
+<p><a title="æƒ…ç†±ãƒ‰ã‚¯ã‚¿ãƒ¼ MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ ä¸¸å±±å�²æ™ƒ" href="https://jyonetsu-doctor.jp/doctors/maruyama_fumiaki/" target="_blank" rel="noopener"><img decoding="async" src="https://jyonetsu-doctor.jp/img/banner/banner_a01.jpg" alt="MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ ä¸¸å±±å�²æ™ƒ" width="450" height="200" border="0" /></a></p>
+<p>&nbsp;</p>
+<p><a href="https://maluclinic.com/wp/wp-content/uploads/2025/03/cf96a6014a53cbca6db656b6cc533885.pdf"><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2025/03/83a6d27ce0b4ffc529d1c4dd040821f5.png" alt="èµ¤ã�¡ã‚ƒã‚“ã�®é ­ã�®å½¢å¤–æ�¥ã‚¤ãƒ³ã‚¿ãƒ“ãƒ¥ãƒ¼ã€€MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ" width="500" height="200" class="alignnone wp-image-2862 size-full" srcset="https://maluclinic.com/wp/wp-content/uploads/2025/03/83a6d27ce0b4ffc529d1c4dd040821f5.png 500w, https://maluclinic.com/wp/wp-content/uploads/2025/03/83a6d27ce0b4ffc529d1c4dd040821f5-300x120.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>&nbsp;</p>
+<p><a href="https://clinic.mynavi.jp/clinic/i01j95x60heb9hnz8aw5peev0sq/"><img decoding="async" src="https://maluclinic.com/wp/wp-content/uploads/2025/04/c5e903da3f72fc543a614f5d426436d7.jpg" alt="" width="600" height="170" class="alignnone wp-image-2938 size-full" srcset="https://maluclinic.com/wp/wp-content/uploads/2025/04/c5e903da3f72fc543a614f5d426436d7.jpg 600w, https://maluclinic.com/wp/wp-content/uploads/2025/04/c5e903da3f72fc543a614f5d426436d7-300x85.jpg 300w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+	</div>
+	</div>
+		<!-- â–²ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ -->
+
+
+
+<!-- â–¼è¨ºç™‚æ¡ˆå†… -->
+<div class="side_box medical_menu">
+	<p class="side_title">è¨ºç™‚å†…å®¹</p>
+	<ul>
+		<li><a href="https://maluclinic.com/menu/%e8%84%b3%e7%a5%9e%e7%b5%8c%e5%a4%96%e7%a7%91%e5%86%85%e7%a7%91/">è„³ç¥�çµŒå¤–ç§‘ãƒ»å†…ç§‘</a></li>
+		<li><a href="https://maluclinic.com/menu/%e6%b6%88%e5%8c%96%e5%99%a8%e5%86%85%e7%a7%91/">æ¶ˆåŒ–å™¨å†…ç§‘</a></li>
+		<li><a href="https://maluclinic.com/menu/%e4%b8%80%e8%88%ac%e5%86%85%e7%a7%91/">ä¸€èˆ¬å†…ç§‘</a></li>
+		<li><a href="https://maluclinic.com/menu/%e4%b9%b3%e5%85%90%e3%81%ae%e3%81%82%e3%81%9f%e3%81%be%e3%81%ae%e5%bd%a2%e5%a4%96%e6%9d%a5/">ä¹³å…�ã�®é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥</a></li>
+		<li><a href="https://maluclinic.com/menu/%e5%90%84%e7%a8%ae%e5%81%a5%e5%ba%b7%e8%a8%ba%e6%96%ad/">å�„ç¨®å�¥åº·è¨ºæ–­</a></li>
+		<li><a href="https://maluclinic.com/menu/%e3%83%89%e3%83%83%e3%82%af/">å�„ç¨®ãƒ‰ãƒƒã‚¯ï¼ˆäºˆé˜²åŒ»ç™‚ï¼‰</a></li>
+		<li><a href="https://maluclinic.com/menu/%e8%87%aa%e8%b2%bb%e8%a8%ba%e7%99%82/">ä¿�é™ºå¤–è¨ºç™‚</a></li>
+		<li><a href="https://maluclinic.com/menu/%e4%ba%88%e9%98%b2%e6%8e%a5%e7%a8%ae/">äºˆé˜²æ�¥ç¨®</a></li>
+		<li><a href="https://maluclinic.com/menu/%e4%bc%9a%e5%93%a1%e5%88%b6%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%82%b7%e3%83%83%e3%83%97/">ä¼šå“¡åˆ¶ãƒ¡ãƒ³ãƒ�ãƒ¼ã‚·ãƒƒãƒ—</a></li>
+		<li><a href="https://maluclinic.com/menu/%e3%82%bb%e3%82%ab%e3%83%b3%e3%83%89%e3%82%aa%e3%83%94%e3%83%8b%e3%82%aa%e3%83%b3/">ã‚»ã‚«ãƒ³ãƒ‰ã‚ªãƒ”ãƒ‹ã‚ªãƒ³</a></li>
+		</ul>
+	</div>
+<!-- â–²è¨ºç™‚æ¡ˆå†… -->
+</div><!-- /.side_area -->
+<!--============================== â–²ã‚µã‚¤ãƒ‰ãƒ�ãƒ¼ ==============================-->
+
+</div>
+</div>
+
+<div class="pagetop">
+<i class="fas fa-angle-up"></i>
+</div>
+
+<footer>
+
+		<div class="footer_googlemap">
+	<div class="googlemap">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.7441431633856!2d139.81958036645221!3d35.71851068468055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188f0077bcd3d9%3A0x59d78ef115f4719d!2zTUFMVeOCr-ODquODi-ODg-OCr-WiqOeUsOabs-iInw!5e0!3m2!1sja!2sjp!4v1719464191224!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	</div>
+	</div>
+	
+	<div class="footer_inner">
+	<div class="footer_info_left">
+	<div class="logo">
+				<a href="https://maluclinic.com/"><img src="https://maluclinic.com/wp/wp-content/uploads/2024/09/4a91eeedc3ca7f13171ce70c084e3bf6.png" alt="MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ"></a>
+	</div>
+
+	<div class="footer_info_left_content tbl_auto">
+				
+				<p class="footer_info_kamoku">å†…ç§‘ãƒ»è„³ç¥�çµŒå¤–ç§‘ãƒ»æ¶ˆåŒ–å™¨å†…ç§‘ãƒ»å†…è¦–é�¡å†…ç§‘ãƒ»è„³ç¥�çµŒå†…ç§‘ãƒ»å°�å…�ç§‘ãƒ»é ­ç—›å¤–æ�¥ãƒ»ç‰©å¿˜ã‚Œå¤–æ�¥ãƒ»é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥ãƒ»ç”Ÿæ´»ç¿’æ…£ç—…ãƒ»å�¥åº·è¨ºæ–­ãƒ»äºˆé˜²æ�¥ç¨®ãƒ»ãƒ¡ãƒ‡ã‚£ã‚«ãƒ«ãƒ€ã‚¤ã‚¨ãƒƒãƒˆãƒ»ç�¡çœ æ™‚ç„¡å‘¼å�¸ç—‡å€™ç¾¤</p>
+		
+		<p class="footer_info_add"><span>ã€’131-0046</span>æ�±äº¬éƒ½å¢¨ç”°åŒºäº¬å³¶1-44-1  BLESSæ›³èˆŸ1F</p>
+		
+				<ul class="footer_info_access">
+						<li>äº¬æˆ�æ›³èˆŸé§…ã‚ˆã‚Šå¾’æ­©1åˆ†</li>
+						<li>æ˜�æ²»é€šã‚Šæ²¿ã�„å‡ºå�£ã‚ˆã‚Šå�³ã�¸30m</li>
+						<li>ã‚´ãƒ¼ãƒ«ãƒ‰ã‚¸ãƒ æ›³èˆŸæ�±äº¬ã�¨ã�ªã‚Š</li>
+						<li>æ›³èˆŸé§…ã‚ˆã‚Šå¾’æ­©7åˆ†</li>
+						<li>æ�±å�‘å³¶é§…ã‚ˆã‚Šå¾’æ­©10åˆ†</li>
+						<li>æŠ¼ä¸Šé§…ã‚ˆã‚Šé›»è»Šã�§1é§…ï¼ˆ2åˆ†ï¼‰</li>
+						<li>ã�¨ã�†ã��ã‚‡ã�†ã‚¹ã‚«ã‚¤ãƒ„ãƒªãƒ¼é§…ã‚ˆã‚Šé›»è»Šã�§1é§…ï¼ˆ3åˆ†ï¼‰</li>
+						<li>é�’ç ¥é§…ã‚ˆã‚Šé›»è»Šã�§4é§…ï¼ˆ7åˆ†ï¼‰</li>
+						<li>éƒ½å–¶ãƒ�ã‚¹ï¼»é‡Œ22ï¼½ã€Œæ˜�æ²»é€šã‚Šã€�ãƒ�ã‚¹å�œã‚ˆã‚Šå¾’æ­©1åˆ†</li>
+				</ul>
+				
+				<p class="footer_info_tel">
+			<a  href="tel:03-6657-0986">tel.03-6657-0986</a></p>
+			<p class="footer_info_fax">fax.03-6657-0987</p>								</div>
+	</div>
+
+
+	<div class="footer_info_right">
+		<!-- â–¼è¨ºç™‚æ™‚é–“ -->
+						<!-- â–¼è¨ºç™‚æ™‚é–“ãƒ«ãƒ¼ãƒ—é–‹å§‹ -->
+<div class="sche_wrap" id="sche_wrap1">
+	<p class="tb02_tit">è¨ºç™‚æ™‚é–“</p>	<!-- â–¼tableãƒ«ãƒ¼ãƒ—é–‹å§‹ -->
+		<table class="tb02">
+	<tr>
+		<th>&nbsp;</th>
+		<td>æœˆ</td>
+		<td>ç�«</td>
+		<td>æ°´</td>
+		<td>æœ¨</td>
+		<td>é‡‘</td>
+		<td>åœŸ</td>
+		<td>æ—¥</td>
+	</tr>
+		<tr>
+		<th class="center">9:00-12:30</th>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â–²</td>
+		<td>ï¼�</td>
+	</tr>
+		<tr>
+		<th class="center">14:30-18:00</th>
+		<td>â€»</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>â—‹</td>
+		<td>ï¼�</td>
+		<td>ï¼�</td>
+	</tr>
+		</table>
+		<!-- â–²tableãƒ«ãƒ¼ãƒ—é–‰ã�˜ -->			
+	<!-- â–¼ä¼‘è¨ºæ—¥ãƒ»è£œè¶³ -->
+		<div class="schedule_note">
+		<p class="kyushinbi">ä¼‘è¨ºæ—¥ï¼šæ—¥æ›œãƒ»ç¥�æ—¥</p>		<p><p>â˜†è©³ç´°ã�¯ä¸‹ã�®æ‹…å½“åŒ»è¡¨ã‚’ã�”å�‚ç…§ã��ã� ã�•ã�„<br />
+â–²â€¦åœŸæ›œã�¯ç¬¬1,3,5é€± 9:00-13:00ã�®ã�¿ã€€<br />
+â€»â€¦æœˆæ›œã�¯20:00ã�¾ã�§ï¼ˆã‚¢ãƒ•ã‚¿ãƒ¼6å¤–æ�¥ï¼‰<br />
+å¹³æ—¥æœ€çµ‚å�—ä»˜30åˆ†å‰� åœŸæ›œæœ€çµ‚å�—ä»˜15åˆ†å‰�<br />
+æ¶ˆåŒ–å™¨å†…ç§‘ã�¯9:30-12:30, 14:30-16:00<br />
+â€»ç�«æ›œå�ˆå¾Œãƒ»æ°´æ›œçµ‚æ—¥ã�¯å‰¯é™¢é•·ï¼ˆæ¶ˆåŒ–å™¨å°‚é–€åŒ»ï¼‰ä¸�åœ¨ã�®ã�Ÿã‚�æ¶ˆåŒ–å™¨ç—‡çŠ¶ã�®è¨ºå¯Ÿã�¯é™¢é•·ã�Œæ‹…å½“ã�„ã�Ÿã�—ã�¾ã�™ã€‚<br />
+â€»16:30ä»¥é™�ã�«æ¶ˆåŒ–å™¨ç—‡çŠ¶ã�§å�—è¨ºã‚’ã�”å¸Œæœ›ã�®æ–¹ã�¯ã€�ã€Œå†…ç§‘ä¸€èˆ¬ã€�ã�‹ã‚‰ã�”äºˆç´„ã��ã� ã�•ã�„ã€‚</p>
+</p>	</div>
+		<!-- â–²ä¼‘è¨ºæ—¥ãƒ»è£œè¶³ -->
+</div><!-- .sche_wrap -->
+<!-- â–²è¨ºç™‚æ™‚é–“ãƒ«ãƒ¼ãƒ—é–‰ã�˜ -->						<!-- â–²è¨ºç™‚æ™‚é–“ -->
+
+		<!-- â–¼ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ -->
+						<!-- â–²ãƒ•ãƒªãƒ¼ã‚¨ãƒªã‚¢ -->
+
+	</div>
+	</div><!-- .footer_inner -->
+
+	<div class="footer_navi">
+	<div class="inner">
+	<ul>
+		<!-- â–¼ãƒ›ãƒ¼ãƒ  -->
+<li><a href="https://maluclinic.com/">ãƒ›ãƒ¼ãƒ <p>Home</p></a></li>
+<!-- â–²ãƒ›ãƒ¼ãƒ  -->
+<!-- â–¼åŒ»å¸«ç´¹ä»‹ -->
+<li><a href="https://maluclinic.com/doctor/">åŒ»å¸«ç´¹ä»‹<p>Doctor</p></a></li>
+<!-- â–²åŒ»å¸«ç´¹ä»‹ -->
+<!-- â–¼åŒ»é™¢æ¡ˆå†… -->
+<li><a href="https://maluclinic.com/clinic/">åŒ»é™¢æ¡ˆå†…<p>Clinic</p></a></li>
+<!-- â–²åŒ»é™¢æ¡ˆå†… -->
+<!-- â–¼è¨ºç™‚å†…å®¹ -->
+<li class="nav_slidebtm"><a href="https://maluclinic.com/medical/">è¨ºç™‚å†…å®¹<p>Medical</p></a>
+	<div>
+	
+		<a href="https://maluclinic.com/menu/%e8%84%b3%e7%a5%9e%e7%b5%8c%e5%a4%96%e7%a7%91%e5%86%85%e7%a7%91/">è„³ç¥�çµŒå¤–ç§‘ãƒ»å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e6%b6%88%e5%8c%96%e5%99%a8%e5%86%85%e7%a7%91/">æ¶ˆåŒ–å™¨å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%b8%80%e8%88%ac%e5%86%85%e7%a7%91/">ä¸€èˆ¬å†…ç§‘</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%b9%b3%e5%85%90%e3%81%ae%e3%81%82%e3%81%9f%e3%81%be%e3%81%ae%e5%bd%a2%e5%a4%96%e6%9d%a5/">ä¹³å…�ã�®é ­ã�®ã�‹ã�Ÿã�¡å¤–æ�¥</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e5%90%84%e7%a8%ae%e5%81%a5%e5%ba%b7%e8%a8%ba%e6%96%ad/">å�„ç¨®å�¥åº·è¨ºæ–­</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e3%83%89%e3%83%83%e3%82%af/">å�„ç¨®ãƒ‰ãƒƒã‚¯ï¼ˆäºˆé˜²åŒ»ç™‚ï¼‰</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e8%87%aa%e8%b2%bb%e8%a8%ba%e7%99%82/">ä¿�é™ºå¤–è¨ºç™‚</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%ba%88%e9%98%b2%e6%8e%a5%e7%a8%ae/">äºˆé˜²æ�¥ç¨®</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e4%bc%9a%e5%93%a1%e5%88%b6%e3%83%a1%e3%83%b3%e3%83%90%e3%83%bc%e3%82%b7%e3%83%83%e3%83%97/">ä¼šå“¡åˆ¶ãƒ¡ãƒ³ãƒ�ãƒ¼ã‚·ãƒƒãƒ—</a>
+
+	
+		<a href="https://maluclinic.com/menu/%e3%82%bb%e3%82%ab%e3%83%b3%e3%83%89%e3%82%aa%e3%83%94%e3%83%8b%e3%82%aa%e3%83%b3/">ã‚»ã‚«ãƒ³ãƒ‰ã‚ªãƒ”ãƒ‹ã‚ªãƒ³</a>
+
+		</div>	
+</li>
+<!-- â–²è¨ºç™‚å†…å®¹ -->
+<!-- â–¼æ–™é‡‘è¡¨ -->
+<li><a href="https://maluclinic.com/price/">å†…è¦–é�¡æ¤œæŸ»<p>endoscope inspection</p></a></li>
+<!-- â–²æ–™é‡‘è¡¨ -->
+<!-- â–¼åˆ�è¨ºã�®æ–¹ã�¸ -->
+<li><a href="https://maluclinic.com/fast/">é ­ç—›å¤–æ�¥<p>headache outpatient</p></a></li>
+<!-- â–²åˆ�è¨ºã�®æ–¹ã�¸ -->
+<!-- â–¼Q&A -->
+<!-- â–²Q&A -->
+<!-- â–¼ã‚¢ã‚¯ã‚»ã‚¹ -->
+<li><a href="https://maluclinic.com/access/">ã‚¢ã‚¯ã‚»ã‚¹<p>Access</p></a></li>
+<!-- â–²ã‚¢ã‚¯ã‚»ã‚¹ -->
+<!-- â–¼æ±‚äººæƒ…å ± -->
+<!-- â–²æ±‚äººæƒ…å ± -->
+<!-- â–¼ã�Šå•�ã�„å�ˆã‚�ã�› -->
+<!-- â–²ã�Šå•�ã�„å�ˆã‚�ã�› -->
+<!-- â–¼ã�ŠçŸ¥ã‚‰ã�› -->
+<li><a href="https://maluclinic.com/news/">ã�ŠçŸ¥ã‚‰ã�›<p>News</p></a></li>
+<!-- â–²ã�ŠçŸ¥ã‚‰ã�› -->
+<!-- â–¼ãƒ–ãƒ­ã‚° -->
+<!-- â–²ãƒ–ãƒ­ã‚° -->
+<!-- â–¼ RIBON æ�¡ç”¨ãƒšãƒ¼ã‚¸ãƒªãƒ³ã‚¯ -->
+<!-- â–² RIBON æ�¡ç”¨ãƒšãƒ¼ã‚¸ãƒªãƒ³ã‚¯ -->
+<!-- â–¼æ–°è¦�å›ºå®šãƒšãƒ¼ã‚¸ -->
+<!-- â–²æ–°è¦�å›ºå®šãƒšãƒ¼ã‚¸ -->
+
+		      	</ul>
+	</div>
+	</div><!-- .footer_navi -->
+	<p class="copy"><small>&copy; MALUã‚¯ãƒªãƒ‹ãƒƒã‚¯å¢¨ç”°æ›³èˆŸ</small></p>
+	<!-- <div class="pagetop">
+	<div><span></span></div>
+	</div>	 -->
+</footer>
+
+<!-- js -->
+<script type="text/javascript" src="https://maluclinic.com/wp/wp-content/themes/t-palette/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://maluclinic.com/wp/wp-content/themes/t-palette/js/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://maluclinic.com/wp/wp-content/themes/t-palette/js/plugin.js"></script>
+<script type="text/javascript" src="https://maluclinic.com/wp/wp-content/themes/t-palette/js/main.js"></script>
+		<script type="text/javascript">
+	$(document).ready(function(){
+		$('.slider-slide').slick({
+		autoplay: true,
+		autoplaySpeed: 2500,
+		speed: 2000,
+		dots: false,
+		arrows: false,
+		centerMode: true,
+		centerPadding: '5%',
+		responsive: [{
+			breakpoint: 640,
+			settings: {
+			autoplay: true,
+			autoplaySpeed: 3000,
+			speed: 2000,
+			dots: false,
+			arrows: false,
+			centerMode: false
+			}
+		}
+		]
+	});
+	});
+	</script>
+	<script>
+$(document).ready(function() {
+	 $('.drawer').drawer();
+});
+</script>
+<script>
+jQuery(function ($) {
+  $(".faq_wrap dl dd").css("display", "none");
+
+  $(".faq_wrap dl dt").click(function () {
+    //ã‚¯ãƒªãƒƒã‚¯ã�—ã�Ÿaccordion-titleä»¥å¤–ã�®å…¨ã�¦ã�®openã‚’å�–ã‚‹
+    $(".faq_wrap dl dt").not(this).removeClass("open");
+    //ã‚¯ãƒªãƒƒã‚¯ã�•ã‚Œã�Ÿtitleä»¥å¤–ã�®contentã‚’é–‰ã�˜ã‚‹
+    $(".faq_wrap dl dt").not(this).next().slideUp(300);
+    //thisã�«openã‚¯ãƒ©ã‚¹ã‚’ä»˜ä¸�
+    $(this).toggleClass("open");
+    //thisã�®contentã‚’å±•é–‹ã€�é–‹ã�„ã�¦ã�„ã‚Œã�°é–‰ã�˜ã‚‹
+    $(this).next().slideToggle(300);
+  });
+});
+</script>
+<script>
+    $('i.time_close').on('click',function(){
+    $("#mpcloud_schedule").fadeOut();
+  });
+</script>
+<script>
+	//é›»è©±ç•ªå�·å…¥åŠ›æ¬„ã�®ä½™è¨ˆã�ªæ–‡å­—åˆ—ã‚’çœ�ã�„ã�¦æ•´å½¢
+	var phoneNumberElements = document.querySelectorAll("a[href^='tel:']");
+	phoneNumberElements.forEach(function(element) {
+		var phoneNumber = element.getAttribute("href").replace(/\D/g, "");
+		element.href = "tel:" + phoneNumber;
+	});
+</script>
+</body>
+</html>
